@@ -1540,6 +1540,13 @@ h3 em,
   align-items: center;
   justify-content: center;
   gap: 1.5rem;
+  text-align: center;
+}
+.processo-header .processo-title,
+.processo-header .processo-title .title-line,
+.processo-header .processo-title .st-line,
+.processo-header .processo-title span {
+  text-align: center !important;
 }
 .processo-header .section-header-desc {
   max-width: 600px;
