@@ -8,7 +8,11 @@
       "Bash(cat)",
       "Read(//tmp/**)",
       "Bash(codex --version)",
-      "Bash(gemini -p \"Leia index.html e style.css aqui. Dá SÓ lista curta \\(max 15 bullets\\) das melhorias de design/layout mais fortes pra consultoria hospitalar premium: hierarquia, espaçamento, tipografia, cores, microinteracoes, seções fracas. Sem código, só diagnóstico.\")"
+      "Bash(gemini -p \"Leia index.html e style.css aqui. Dá SÓ lista curta \\(max 15 bullets\\) das melhorias de design/layout mais fortes pra consultoria hospitalar premium: hierarquia, espaçamento, tipografia, cores, microinteracoes, seções fracas. Sem código, só diagnóstico.\")",
+      "Bash(curl -s http://localhost:8000/index.html)",
+      "Bash(pkill -f \"python -m http.server\")",
+      "Bash(python -m http.server 8000)",
+      "Bash(python3 *)"
     ]
   }
 }

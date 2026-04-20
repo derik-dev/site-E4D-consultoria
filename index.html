@@ -11,7 +11,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Outfit:wght@300;400;500;600;700;800&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
     rel="stylesheet">
 
   <link rel="stylesheet" href="style.css">
@@ -83,14 +83,14 @@
       <div class="hero-left">
         <div class="hero-eyebrow">
           <span class="hero-eyebrow-label">Consultoria de Alto Padrão</span>
-          <span class="hero-eyebrow-sep">·</span>
           <span class="hero-eyebrow-loc"><i data-lucide="map-pin"></i> RJ + Macaé</span>
         </div>
 
         <h1 class="hero-title">
           <span>Aumente a eficiência</span>
           <span>da sua operação</span>
-          <span>em até 28% em <em>12 semanas.</em></span>
+          <span>em até <em class="gold-text">28%</em> em</span>
+          <span><em class="gold-text">12 semanas.</em></span>
         </h1>
 
         <p class="hero-desc">
@@ -100,10 +100,10 @@
 
         <div class="hero-actions">
           <a href="#contato" class="btn btn-gold magnetic" data-hover>
-            <span>Agendar diagnóstico <i data-lucide="arrow-up-right"></i></span>
+            <span>AGENDAR DIAGNÓSTICO <i data-lucide="arrow-up-right"></i></span>
           </a>
           <a href="#resultados" class="btn-ghost-hero magnetic" data-hover>
-            <span>Ver resultados <i data-lucide="bar-chart-2"></i></span>
+            <span>VER RESULTADOS <i data-lucide="bar-chart-2"></i></span>
           </a>
         </div>
 
@@ -199,261 +199,70 @@
 
 
   <!-- ══════════════════════ POSICIONAMENTO ══════════════════════ -->
-  <section class="posicionamento" id="posicionamento">
-    <div class="container pos-grid">
-      <div class="pos-left">
-        <div class="label"><span class="line"></span> 01 — Posicionamento</div>
-        <h2 class="title-h2 reveal-title">
-          Transformando<br>
-          <em>caos em sistema.</em>
-        </h2>
-        <div class="pos-body">
-          <p class="desc">
-            Clínicas e hospitais vivem sob pressão constante. Decisões erradas custam caro —
-            financeira e humanamente. A E4D entra como a força que organiza o que estava
-            fragmentado, mensura o que era invisível e transforma gestão reativa em inteligência
-            operacional.
-          </p>
-          <p class="desc">
-            Domínio técnico sem arrogância. Sofisticada como uma empresa de engenharia de alto
-            padrão, direta como um relatório executivo e confiável como um sistema bem calibrado.
-          </p>
-
-          <div class="traits">
-            <span class="trait">Autoridade técnica</span>
-            <span class="trait">Precisão cirúrgica</span>
-            <span class="trait">Confiança estrutural</span>
-            <span class="trait">Resultado mensurável</span>
-          </div>
+  <section class="split-section split-left" id="posicionamento">
+    <div class="split-container">
+      <div class="split-image">
+        <img src="imagens/tech_room.png" alt="Ambiente de tecnologia" class="split-img">
+        <div class="split-overlay"></div>
+        <div class="float-card">
+          <div class="float-num">30<span>+</span></div>
+          <div class="float-text">Hospitais e clínicas reestruturados</div>
         </div>
       </div>
 
-      <aside class="pos-right">
-        <figure class="pos-quote">
-          <blockquote>
-            Não somos mais uma consultoria. Somos a <em>estrutura</em> que faltava na sua operação.
-          </blockquote>
-          <figcaption>
-            <span class="dash"></span>
-            Posicionamento E4D
-          </figcaption>
-        </figure>
+      <div class="split-content">
+        <div class="label"><span class="line"></span> 01 — Posicionamento</div>
+        <h2 class="title-h2">Transformando <em>caos em sistema.</em></h2>
+        <p class="desc">Clínicas e hospitais vivem sob pressão constante. Decisões erradas custam caro — financeira e humanamente. A E4D entra como a força que organiza o que estava fragmentado, mensura o que era invisível.</p>
 
-        <div class="pos-signal-grid">
-          <div class="pos-signal">
-            <div class="pos-signal-label">Primeiro contato</div>
-            <div class="pos-signal-text">"Essa empresa sabe o que faz."</div>
-          </div>
-          <div class="pos-signal">
-            <div class="pos-signal-label">Após proposta</div>
-            <div class="pos-signal-text">"Eles conhecem minha realidade."</div>
-          </div>
-          <div class="pos-signal">
-            <div class="pos-signal-label">Durante o projeto</div>
-            <div class="pos-signal-text">"Finalmente alguém no controle."</div>
-          </div>
-          <div class="pos-signal">
-            <div class="pos-signal-label">Pós-entrega</div>
-            <div class="pos-signal-text">"Quero continuar com eles."</div>
-          </div>
+        <div class="traits">
+          <span class="trait">Autoridade técnica</span>
+          <span class="trait">Precisão cirúrgica</span>
+          <span class="trait">Confiança estrutural</span>
+          <span class="trait">Resultado mensurável</span>
         </div>
-      </aside>
+
+        <blockquote class="split-quote">
+          Não somos mais uma consultoria. Somos a <em>estrutura</em> que faltava na sua operação.
+        </blockquote>
+      </div>
     </div>
   </section>
 
-  <!-- ══════════════════════ PROCESSO ══════════════════════ -->
-  <section class="processo" id="processo">
-    <div class="container">
-      <header class="section-header processo-header">
-        <div class="label"><span class="line"></span> Método · E4D</div>
-        <div class="section-header-row">
-          <h2 class="title-h2 reveal-title processo-title">
-            <span class="title-line">Quatro etapas</span>
-            <span class="title-line">para <em>reestruturar a operação.</em></span>
-          </h2>
-          <p class="desc section-header-desc">
-            Um método testado em mais de 30 projetos hospitalares. Cada fase tem escopo claro,
-            prazo definido e entrega verificável.
-          </p>
-        </div>
-      </header>
-
-      <ol class="processo-timeline">
-        <li class="processo-step" data-hover>
-          <div class="processo-step-num">01</div>
-          <div class="processo-step-body">
-            <div class="processo-step-tag">Semana 1 a 3</div>
-            <h3 class="processo-step-title">Diagnóstico</h3>
-            <p class="processo-step-desc">
-              Imersão na operação, leitura de indicadores e entrevistas com lideranças.
-              Mapa de causa-raiz com evidências, não achismo.
-            </p>
-            <ul class="processo-step-list">
-              <li>Leitura físico-financeira</li>
-              <li>Entrevistas com time-chave</li>
-              <li>Mapa de gargalos</li>
-            </ul>
-          </div>
-        </li>
-        <li class="processo-step" data-hover>
-          <div class="processo-step-num">02</div>
-          <div class="processo-step-body">
-            <div class="processo-step-tag">Semana 4 a 6</div>
-            <h3 class="processo-step-title">Estruturação</h3>
-            <p class="processo-step-desc">
-              Desenho de processos, rituais de gestão, contratos e indicadores.
-              Documento executivo com plano de ação priorizado.
-            </p>
-            <ul class="processo-step-list">
-              <li>Redesenho de fluxos</li>
-              <li>Plano de ação priorizado</li>
-              <li>Cadência de reuniões gerenciais</li>
-            </ul>
-          </div>
-        </li>
-        <li class="processo-step" data-hover>
-          <div class="processo-step-num">03</div>
-          <div class="processo-step-body">
-            <div class="processo-step-tag">Semana 7 a 10</div>
-            <h3 class="processo-step-title">Implementação</h3>
-            <p class="processo-step-desc">
-              A E4D entra em campo com o time. Treinamos lideranças, rodamos projetos-piloto
-              e ajustamos o que não funcionar.
-            </p>
-            <ul class="processo-step-list">
-              <li>Execução em campo</li>
-              <li>Treinamento de gestão</li>
-              <li>Ajuste fino de rotinas</li>
-            </ul>
-          </div>
-        </li>
-        <li class="processo-step" data-hover>
-          <div class="processo-step-num">04</div>
-          <div class="processo-step-body">
-            <div class="processo-step-tag">Semana 11 e 12+</div>
-            <h3 class="processo-step-title">Acompanhamento</h3>
-            <p class="processo-step-desc">
-              Governança mensal, painel de indicadores e reuniões de calibragem.
-              Continuamos dentro da operação — não sumimos depois do PDF.
-            </p>
-            <ul class="processo-step-list">
-              <li>Painel de indicadores</li>
-              <li>Governança mensal</li>
-              <li>Revisão trimestral</li>
-            </ul>
-          </div>
-        </li>
-      </ol>
+  <!-- ══════════════════════ MÉTODO ══════════════════════ -->
+  <section class="split-section split-right" id="processo">
+    <div class="split-container">
+      <div class="split-content">
+        <div class="label"><span class="line"></span> 02 — Método</div>
+        <h2 class="title-h2">Quatro etapas para <em>reestruturar.</em></h2>
+        <p class="desc">Um método testado em mais de 30 projetos. Cada fase tem escopo claro, prazo definido e entrega verificável.</p>
+        <ol class="timeline-list">
+          <li><div class="timeline-num">01</div><div class="timeline-body"><div class="timeline-title">Diagnóstico</div><p>Imersão, indicadores, entrevistas. Mapa de causa-raiz com evidências.</p></div></li>
+          <li><div class="timeline-num">02</div><div class="timeline-body"><div class="timeline-title">Estruturação</div><p>Redesenho de processos, plano priorizado, rituais de gestão.</p></div></li>
+          <li><div class="timeline-num">03</div><div class="timeline-body"><div class="timeline-title">Implementação</div><p>Execução em campo, treinamento, projetos-piloto e ajustes.</p></div></li>
+          <li><div class="timeline-num">04</div><div class="timeline-body"><div class="timeline-title">Acompanhamento</div><p>Governança mensal, painel de indicadores, revisão trimestral.</p></div></li>
+        </ol>
+      </div>
+      <div class="split-image">
+        <img src="imagens/dashboard.png" alt="Dashboard de gestão" class="split-img">
+        <div class="split-overlay"></div>
+        <div class="device-badge"><div class="badge-dot"></div><span>Sistema Ativo</span></div>
+      </div>
     </div>
   </section>
 
   <!-- ══════════════════════ PILARES ══════════════════════ -->
-  <section class="pilares" id="pilares">
+  <section class="pilares-section" id="pilares">
     <div class="container">
       <header class="section-header">
         <div class="label"><span class="line"></span> 03 — Áreas de atuação</div>
-        <div class="section-header-row">
-          <h2 class="title-h2 reveal-title pilares-title">
-            <span class="title-line">Os quatro pilares</span>
-            <span class="title-line">da sua <em>operação.</em></span>
-          </h2>
-          <p class="desc section-header-desc">
-            Cada frente é construída para atuar em conjunto. Não entregamos relatórios — estruturamos
-            e acompanhamos a implementação de ponta a ponta.
-          </p>
-        </div>
+        <h2 class="title-h2">Os quatro pilares <em>da sua operação.</em></h2>
       </header>
-
-      <div class="pilar-grid">
-
-        <article class="pilar-card" data-hover>
-          <div class="pilar-top">
-            <span class="pilar-num">01</span>
-            <div class="pilar-icon"><i data-lucide="line-chart"></i></div>
-          </div>
-          <h3 class="pilar-title">Gestão & <em>Estratégia</em></h3>
-          <p class="pilar-desc">
-            Análise físico-financeira, mapeamento de contratos e revisão de cada linha de custo
-            para transformar operação reativa em decisão orientada por dados.
-          </p>
-          <ul class="pilar-list">
-            <li>Avaliação de OPEX e CAPEX</li>
-            <li>Cruzamento físico-financeiro</li>
-            <li>Renegociação com fornecedores</li>
-            <li>Alinhamento com operadoras de saúde</li>
-            <li>Marketing e relacionamento médico</li>
-          </ul>
-          <a href="#entregaveis" class="pilar-link" data-hover>
-            Ver entregáveis <i data-lucide="arrow-right"></i>
-          </a>
-        </article>
-
-        <article class="pilar-card" data-hover>
-          <div class="pilar-top">
-            <span class="pilar-num">02</span>
-            <div class="pilar-icon"><i data-lucide="users"></i></div>
-          </div>
-          <h3 class="pilar-title">Desenvolvimento de <em>Lideranças</em></h3>
-          <p class="pilar-desc">
-            Perfil comportamental do time, treinamento de gestão e a mentoria Empresa de Alto
-            Valor — 12 semanas para transformar lideranças em força operacional.
-          </p>
-          <ul class="pilar-list">
-            <li>Análise comportamental e aderência aos cargos</li>
-            <li>Ferramentas de decisão e gestão de tempo</li>
-            <li>Mensuração e qualidade de gestão</li>
-            <li>Mentoria E.A.V. — 12 semanas</li>
-            <li>Estratégias de alta performance</li>
-          </ul>
-          <a href="#mentoria" class="pilar-link" data-hover>
-            Conhecer mentoria <i data-lucide="arrow-right"></i>
-          </a>
-        </article>
-
-        <article class="pilar-card" data-hover>
-          <div class="pilar-top">
-            <span class="pilar-num">03</span>
-            <div class="pilar-icon"><i data-lucide="heart-handshake"></i></div>
-          </div>
-          <h3 class="pilar-title">Atendimento & <em>Experiência</em></h3>
-          <p class="pilar-desc">
-            Recepção de alto desempenho e logística interna redesenhada para que a jornada
-            do paciente deixe de ser gargalo e passe a ser diferencial competitivo.
-          </p>
-          <ul class="pilar-list">
-            <li>Atendimento humanizado</li>
-            <li>Técnicas de venda em recepção</li>
-            <li>Redesenho de fluxos internos</li>
-            <li>Redução de gargalos operacionais</li>
-            <li>Otimização da jornada do paciente</li>
-          </ul>
-          <a href="#entregaveis" class="pilar-link" data-hover>
-            Ver entregáveis <i data-lucide="arrow-right"></i>
-          </a>
-        </article>
-
-        <article class="pilar-card" data-hover>
-          <div class="pilar-top">
-            <span class="pilar-num">04</span>
-            <div class="pilar-icon"><i data-lucide="settings-2"></i></div>
-          </div>
-          <h3 class="pilar-title">Engenharia & <em>Infraestrutura</em></h3>
-          <p class="pilar-desc">
-            Manutenção predial, engenharia clínica, gestão de utilidades e preparação para
-            acreditações. Infraestrutura segura, em conformidade e pronta para auditoria.
-          </p>
-          <ul class="pilar-list">
-            <li>Manutenção predial e engenharia clínica</li>
-            <li>Gestão de utilidades (água, ar, energia)</li>
-            <li>Laudos de água e ar · suporte Anvisa</li>
-            <li>Preparação JCI, ONA 1-3 e QMENTUM</li>
-            <li>Auditoria elétrica, PCI e segurança</li>
-          </ul>
-          <a href="#entregaveis" class="pilar-link" data-hover>
-            Ver entregáveis <i data-lucide="arrow-right"></i>
-          </a>
-        </article>
-
+      <div class="pilares-grid">
+        <article class="pilar-item" data-hover><div class="pilar-icon"><i data-lucide="line-chart"></i></div><div class="pilar-num">01</div><h3>Gestão &<em>Estratégia</em></h3><p>Análise físico-financeira, mapeamento de contratos, revisão de custos.</p><ul><li>OPEX e CAPEX</li><li>Cruzamento físico-financeiro</li><li>Renegociação com fornecedores</li></ul></article>
+        <article class="pilar-item" data-hover><div class="pilar-icon"><i data-lucide="users"></i></div><div class="pilar-num">02</div><h3>Desenvolvimento de <em>Lideranças</em></h3><p>Análise comportamental, treinamento de gestão, mentoria estruturada.</p><ul><li>Perfil comportamental</li><li>Ferramentas de decisão</li><li>Mentoria E.A.V. — 12 semanas</li></ul></article>
+        <article class="pilar-item" data-hover><div class="pilar-icon"><i data-lucide="heart-handshake"></i></div><div class="pilar-num">03</div><h3>Experiência do<em>Paciente</em></h3><p>Recepção humanizada, logística interna redesenhada, jornada otimizada.</p><ul><li>Atendimento humanizado</li><li>Redesenho de fluxos</li><li>Redução de gargalos</li></ul></article>
+        <article class="pilar-item" data-hover><div class="pilar-icon"><i data-lucide="settings-2"></i></div><div class="pilar-num">04</div><h3>Engenharia &<em>Infraestrutura</em></h3><p>Manutenção predial, engenharia clínica, acreditações, segurança.</p><ul><li>Gestão de utilidades</li><li>Laudos de conformidade</li><li>Preparação JCI/ONA</li></ul></article>
       </div>
     </div>
   </section>
@@ -632,6 +441,86 @@
     </div>
   </section>
 
+  <!-- ══════════════════════ FERRAMENTAS / GALLERY ══════════════════════ -->
+  <section class="gallery-section" id="ferramentas">
+    <div class="exemplos-bg" aria-hidden="true">
+      <div class="exemplos-accent-1"></div>
+      <div class="exemplos-accent-2"></div>
+    </div>
+
+    <div class="container">
+      <header class="section-header">
+        <div class="label"><span class="line"></span> Exemplos Práticos</div>
+        <div class="section-header-row">
+          <h2 class="title-h2 reveal-title">
+            Transformação<br>
+            <em>em evidência.</em>
+          </h2>
+          <p class="desc section-header-desc">
+            Ferramentas, sistemas e processos que entregam resultado mensurável.
+            Cada projeto é prova viva de como estrutura e disciplina funcionam juntas.
+          </p>
+        </div>
+      </header>
+
+      <div class="exemplos-grid">
+        <div class="exemplo-card exemplo-card-large" data-hover>
+          <div class="exemplo-image">
+            <img src="imagens/dashboard.png" alt="Dashboard de Inteligência Operacional" class="exemplo-img">
+            <div class="exemplo-overlay"></div>
+            <div class="exemplo-tag exemplo-tag-primary">Inteligência Operacional</div>
+          </div>
+          <div class="exemplo-content">
+            <div class="exemplo-badge"><i data-lucide="activity"></i> Sistema Ativo</div>
+            <h3 class="exemplo-title">Dashboard de BI</h3>
+            <p class="exemplo-desc">
+              Sistema de indicadores em tempo real que transforma dados brutos em decisões estratégicas.
+              Centraliza métricas de todas as operações em um único painel.
+            </p>
+            <ul class="exemplo-features">
+              <li><i data-lucide="check-circle-2"></i> KPIs em tempo real</li>
+              <li><i data-lucide="check-circle-2"></i> Alertas automáticos</li>
+              <li><i data-lucide="check-circle-2"></i> Histórico de 12 meses</li>
+            </ul>
+            <a href="#contato" class="exemplo-link" data-hover>Conhecer sistema <i data-lucide="arrow-right"></i></a>
+          </div>
+        </div>
+
+        <div class="exemplo-card" data-hover>
+          <div class="exemplo-image">
+            <img src="imagens/eficiencia-3-linhas.png" alt="Análise de Eficiência Operacional" class="exemplo-img">
+            <div class="exemplo-overlay"></div>
+            <div class="exemplo-tag">Operacional</div>
+          </div>
+          <div class="exemplo-content">
+            <div class="exemplo-badge"><i data-lucide="trending-down"></i> Otimização</div>
+            <h3 class="exemplo-title">Análise de Eficiência</h3>
+            <p class="exemplo-desc">
+              Mapeamento de gargalos com precisão cirúrgica.
+            </p>
+            <a href="#contato" class="exemplo-link" data-hover>Saiba mais <i data-lucide="arrow-right"></i></a>
+          </div>
+        </div>
+
+        <div class="exemplo-card" data-hover>
+          <div class="exemplo-image">
+            <img src="imagens/eficiencia-3-linhas-inline.png" alt="Métricas de Desempenho" class="exemplo-img">
+            <div class="exemplo-overlay"></div>
+            <div class="exemplo-tag">Gestão</div>
+          </div>
+          <div class="exemplo-content">
+            <div class="exemplo-badge"><i data-lucide="bar-chart-2"></i> Métricas</div>
+            <h3 class="exemplo-title">KPIs Estruturados</h3>
+            <p class="exemplo-desc">
+              Indicadores alinhados com objetivos estratégicos.
+            </p>
+            <a href="#contato" class="exemplo-link" data-hover>Saiba mais <i data-lucide="arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- ══════════════════════ FILOSOFIA / QUOTE ══════════════════════ -->
   <section class="filosofia">
     <div class="container filosofia-grid">
@@ -746,6 +635,9 @@
       </header>
 
       <div class="resultados-grid">
+        <div class="resultado-image">
+          <img src="https://images.unsplash.com/photo-1551288560-199a91ba4188?q=80&w=2070&auto=format&fit=crop" alt="Métricas de sucesso" class="res-img">
+        </div>
         <div class="resultado-card">
           <div class="resultado-icon"><i data-lucide="trending-up"></i></div>
           <div class="resultado-title">Faturamento em expansão</div>
