@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(codex --help)",
+      "Bash(codex exec *)",
+      "Bash(gemini --version)",
+      "Bash(gemini --help)",
+      "Bash(cat)",
+      "Read(//tmp/**)",
+      "Bash(codex --version)",
+      "Bash(gemini -p \"Leia index.html e style.css aqui. Dá SÓ lista curta \\(max 15 bullets\\) das melhorias de design/layout mais fortes pra consultoria hospitalar premium: hierarquia, espaçamento, tipografia, cores, microinteracoes, seções fracas. Sem código, só diagnóstico.\")"
+    ]
+  }
+}
