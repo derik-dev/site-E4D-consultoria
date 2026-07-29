@@ -12,7 +12,11 @@
       "Bash(curl -s http://localhost:8000/index.html)",
       "Bash(pkill -f \"python -m http.server\")",
       "Bash(python -m http.server 8000)",
-      "Bash(python3 *)"
+      "Bash(python3 *)",
+      "Bash(grep -n \"filosofia\" \"C:\\\\\\\\Users\\\\\\\\NATALIA\\\\\\\\Downloads\\\\\\\\site-pedro-ivo\\\\\\\\index.html\")",
+      "Bash(codex \"Leia o arquivo briefings/roteiro-1.md e compare com todos os textos de copy presentes no index.html. Verifique se os textos estão condizendo com o briefing — títulos, descrições, entregáveis, CTAs, nomes de seção, etc. Liste qualquer discrepância encontrada.\")",
+      "Bash(awk -F: '$1 > 3590')",
+      "Bash(git add *)"
     ]
   }
 }

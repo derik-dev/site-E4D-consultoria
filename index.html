@@ -6,24 +6,1262 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>E4D Consultoria — Gestão Operacional Hospitalar</title>
   <meta name="description"
-    content="A estrutura que faltava na sua operação. Consultoria em gestão administrativa, engenharia de manutenção, desenvolvimento de lideranças e experiência do paciente para clínicas e hospitais.">
+    content="A estrutura que faltava na sua operação. Consultoria em gestão administrativa, engenharia de manutenção, desenvolvimento de lideranças e experiência do paciente para clínicas, hospitais e empresas em expansão.">
 
+  <!-- Google Tag Manager -->
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    window.E4D_GTM_ID = 'GTM-T35GZ6V7';
+  </script>
+  <!-- End Google Tag Manager -->
+
+  <link rel="preconnect" href="https://www.googletagmanager.com">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+  <link rel="dns-prefetch" href="//unpkg.com">
+  <link rel="dns-prefetch" href="//cdnjs.cloudflare.com">
+  <link rel="dns-prefetch" href="//cdn.jsdelivr.net">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
     rel="stylesheet">
 
-  <link rel="stylesheet" href="style.css">
-  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="stylesheet" href="style.css?v=20260507-optimize">
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    window.trackE4DLeadConversion = function trackE4DLeadConversion(payload) {
+      window.dataLayer.push({
+        event: 'formulario_enviado',
+        conversion_action: 'lead_form_submit',
+        form_name: payload && payload.formName ? payload.formName : 'contato',
+        lead_channel: payload && payload.channel ? payload.channel : 'formulario'
+      });
+    };
+  </script>
+  <style>
+    /* ═══════════════════════════════════════════════
+       PILARES V2 — override styles
+    ═══════════════════════════════════════════════ */
+    section.pilares-v2 {
+      background: #F5F5F3;
+      padding: clamp(32px, 4vw, 52px) 0 clamp(64px, 8vw, 104px);
+      position: relative;
+      overflow: hidden;
+    }
+
+    section.pilares-v2 .pilares-v2-bg {
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      background: radial-gradient(circle at 10% 20%, rgba(201, 168, 76, 0.07) 0%, transparent 50%);
+    }
+
+    section.pilares-v2 .pilares-v2-intro {
+      width: 100%;
+      max-width: none;
+      margin: 0 auto 2.75rem;
+      text-align: center;
+    }
+
+    section.pilares-v2 .pilares-v2-intro h2 em {
+      white-space: normal;
+    }
+
+    section.pilares-v2 .pilares-v2-intro .label {
+      justify-content: center;
+    }
+
+    section.pilares-v2 .pilares-v2-main {
+      display: grid;
+      grid-template-columns: 1.35fr 1fr;
+      gap: 2rem;
+      margin-bottom: 2.25rem;
+    }
+
+    section.pilares-v2 .pilares-v2-featured {
+      background: #ffffff;
+      border: 1px solid rgba(13, 24, 46, 0.12);
+      border-radius: 20px;
+      padding: 2.5rem;
+      box-shadow: 0 8px 40px rgba(13, 24, 46, 0.08);
+      position: relative;
+      overflow: hidden;
+      transition: transform .4s ease, box-shadow .4s ease;
+    }
+
+    section.pilares-v2 .pilares-v2-featured::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background: linear-gradient(90deg, #C9A84C, #E2C47A);
+    }
+
+    section.pilares-v2 .pilares-v2-featured:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 20px 60px rgba(13, 24, 46, 0.14);
+    }
+
+    section.pilares-v2 .featured-header {
+      display: flex;
+      align-items: flex-start;
+      gap: 1.5rem;
+      margin-bottom: 1.75rem;
+      padding-bottom: 1.75rem;
+      border-bottom: 1px solid rgba(13, 24, 46, 0.08);
+    }
+
+    section.pilares-v2 .featured-num {
+      font-size: 4rem;
+      font-weight: 200;
+      color: #C9A84C;
+      opacity: 0.3;
+      line-height: 1;
+      flex-shrink: 0;
+    }
+
+    section.pilares-v2 .featured-title-group h3 {
+      font-size: clamp(1.5rem, 2.5vw, 2rem);
+      font-weight: 600;
+      color: #0D182E;
+      margin: 0 0 0.75rem;
+      line-height: 1.1;
+    }
+
+    section.pilares-v2 .featured-metric {
+      display: inline-flex;
+      align-items: baseline;
+      gap: 0.5rem;
+      padding: 0.4rem 0.85rem;
+      background: rgba(201, 168, 76, 0.12);
+      border: 1px solid rgba(201, 168, 76, 0.25);
+      border-radius: 6px;
+    }
+
+    section.pilares-v2 .metric-value {
+      font-size: 1.6rem;
+      font-weight: 700;
+      color: #A0842D;
+      line-height: 1;
+    }
+
+    section.pilares-v2 .metric-label {
+      font-size: 0.8rem;
+      color: #3D4452;
+    }
+
+    section.pilares-v2 .featured-desc {
+      font-size: 1rem;
+      line-height: 1.7;
+      color: #3D4452;
+      margin-bottom: 1.75rem;
+    }
+
+    section.pilares-v2 .featured-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.25rem;
+      margin-bottom: 1.75rem;
+    }
+
+    section.pilares-v2 .featured-item {
+      display: flex;
+      gap: 0.75rem;
+      align-items: flex-start;
+    }
+
+    section.pilares-v2 .featured-item i {
+      width: 20px;
+      height: 20px;
+      color: #C9A84C;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+
+    section.pilares-v2 .featured-item strong {
+      display: block;
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: #0D182E;
+      margin-bottom: 0.2rem;
+    }
+
+    section.pilares-v2 .featured-item p {
+      font-size: 0.82rem;
+      color: #7C8490;
+      margin: 0;
+      line-height: 1.4;
+    }
+
+    section.pilares-v2 .featured-deliverables {
+      margin: 0 0 1.65rem;
+      padding: 1.1rem 1.25rem;
+      border: 1px solid rgba(13, 24, 46, 0.08);
+      border-radius: 10px;
+      background: rgba(13, 24, 46, 0.025);
+      color: #3D4452;
+      font-size: 0.9rem;
+      line-height: 1.55;
+    }
+
+    section.pilares-v2 .featured-deliverables strong {
+      color: #0D182E;
+      font-weight: 700;
+      margin-right: 0.35rem;
+    }
+
+    section.pilares-v2 .featured-footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 1.25rem;
+      border-top: 1px solid rgba(13, 24, 46, 0.06);
+      font-size: 0.85rem;
+    }
+
+    section.pilares-v2 .featured-time {
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      color: #7C8490;
+      font-weight: 500;
+    }
+
+    section.pilares-v2 .featured-time i {
+      width: 14px;
+      height: 14px;
+    }
+
+    section.pilares-v2 .featured-roi {
+      font-weight: 600;
+      color: #0D182E;
+      background: rgba(201, 168, 76, 0.1);
+      padding: 0.35rem 0.8rem;
+      border-radius: 6px;
+      font-size: 0.85rem;
+    }
+
+    section.pilares-v2 .pilares-v2-stack {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    section.pilares-v2 .stack-card {
+      background: #ffffff;
+      border: 1px solid rgba(13, 24, 46, 0.1);
+      border-radius: 14px;
+      padding: 1.75rem;
+      flex: 1;
+      transition: all .35s cubic-bezier(0.23, 1, 0.32, 1);
+    }
+
+    section.pilares-v2 .stack-card:hover {
+      border-color: rgba(201, 168, 76, 0.4);
+      transform: translateX(6px);
+      box-shadow: 0 8px 30px rgba(13, 24, 46, 0.09);
+    }
+
+    section.pilares-v2 .stack-header {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      margin-bottom: 0.75rem;
+    }
+
+    section.pilares-v2 .stack-num {
+      font-size: 1.6rem;
+      font-weight: 200;
+      color: #C9A84C;
+      opacity: 0.45;
+      line-height: 1;
+    }
+
+    section.pilares-v2 .stack-header h4 {
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: #0D182E;
+      margin: 0;
+      line-height: 1.2;
+    }
+
+    section.pilares-v2 .stack-card p {
+      font-size: 0.88rem;
+      color: #7C8490;
+      line-height: 1.6;
+      margin: 0 0 0.85rem;
+    }
+
+    section.pilares-v2 .stack-highlight {
+      display: inline-block;
+      font-size: 0.78rem;
+      font-weight: 700;
+      color: #A0842D;
+      background: rgba(201, 168, 76, 0.1);
+      padding: 0.35rem 0.75rem;
+      border-radius: 5px;
+    }
+
+    section.pilares-v2 .stack-highlight strong {
+      color: #C9A84C;
+      font-size: 1.1em;
+    }
+
+    section.pilares-v2 .pilares-v2-cta {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 2rem;
+      padding: 2.25rem;
+      border: 2px dashed rgba(201, 168, 76, 0.3);
+      border-radius: 14px;
+      background: rgba(201, 168, 76, 0.04);
+    }
+
+    section.pilares-v2 .cta-content {
+      flex: 1;
+    }
+
+    section.pilares-v2 .cta-eyebrow {
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #C9A84C;
+      margin: 0 0 0.4rem;
+    }
+
+    section.pilares-v2 .cta-main {
+      font-size: 1rem;
+      color: #3D4452;
+      margin: 0;
+      line-height: 1.5;
+    }
+
+    section.pilares-v2 .cta-main strong {
+      color: #0D182E;
+    }
+
+    @media (max-width: 1024px) {
+      section.pilares-v2 .pilares-v2-main {
+        grid-template-columns: 1fr;
+      }
+
+      section.pilares-v2 .pilares-v2-stack {
+        flex-direction: row;
+        flex-wrap: wrap;
+      }
+
+      section.pilares-v2 .stack-card {
+        flex: 1 1 calc(50% - 0.5rem);
+      }
+    }
+
+    @media (max-width: 640px) {
+      section.pilares-v2 .featured-grid {
+        grid-template-columns: 1fr;
+      }
+
+      section.pilares-v2 .stack-card {
+        flex: 1 1 100%;
+      }
+
+      section.pilares-v2 .pilares-v2-cta {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      section.pilares-v2 .featured-footer {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.75rem;
+        text-align: center;
+      }
+
+      section.pilares-v2 .pilares-v2-intro,
+      section.pilares-v2 .featured-header,
+      section.pilares-v2 .featured-title-group {
+        text-align: center;
+      }
+
+      section.pilares-v2 .featured-header {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      section.pilares-v2 .stack-header {
+        justify-content: center;
+      }
+    }
+
+    /* ═══════════════════════════════════════════════
+       MENTORIA V2 — override styles
+    ═══════════════════════════════════════════════ */
+    section.mentoria-v2 {
+      background: #0D182E !important;
+      padding: clamp(32px, 4vw, 52px) 0 clamp(64px, 8vw, 104px);
+      position: relative;
+      color: #FFFFFF;
+    }
+
+    section.mentoria-v2 .container {
+      max-width: 1440px;
+      padding: 0 clamp(24px, 4vw, 64px);
+    }
+
+    section.mentoria-v2::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, rgba(201, 168, 76, 0.35), transparent);
+    }
+
+    section.mentoria-v2 .mentoria-v2-split {
+      display: grid;
+      grid-template-columns: 1fr 2.2fr;
+      gap: 3rem;
+      align-items: stretch;
+      margin-top: 2rem;
+    }
+
+    section.mentoria-v2 .mentoria-v2-left {
+      display: flex;
+      flex-direction: column;
+      gap: 1.75rem;
+      /* position: sticky; */
+      /* top: 40px; */
+    }
+
+    section.mentoria-v2 .mentoria-v2-left .title-h2 {
+      color: #FFFFFF !important;
+      font-size: clamp(2.4rem, 5.4vw, 4.5rem);
+      margin: 0.75rem 0 0;
+      line-height: 1.1;
+    }
+
+    section.mentoria-v2 .mentoria-v2-left .title-h2 em {
+      color: #C9A84C !important;
+    }
+
+    section.mentoria-v2 .mentoria-v2-promise {
+      display: flex;
+      gap: 1rem;
+      padding: 1.5rem;
+      border: 1px solid rgba(201, 168, 76, 0.3);
+      border-radius: 12px;
+      background: rgba(201, 168, 76, 0.1);
+    }
+
+    section.mentoria-v2 .promise-icon {
+      width: 44px;
+      height: 44px;
+      border-radius: 10px;
+      background: #C9A84C;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #0D182E;
+      flex-shrink: 0;
+    }
+
+    section.mentoria-v2 .promise-icon i {
+      width: 24px;
+      height: 24px;
+    }
+
+    section.mentoria-v2 .promise-headline {
+      font-size: 0.85rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: #C9A84C;
+      margin: 0 0 0.4rem;
+    }
+
+    section.mentoria-v2 .promise-sub {
+      font-size: 0.9rem;
+      color: #C2C6CD;
+      line-height: 1.5;
+      margin: 0;
+    }
+
+    section.mentoria-v2 .mentoria-v2-stats {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 0.75rem;
+    }
+
+    section.mentoria-v2 .stat-box {
+      padding: 1.25rem 0.75rem;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 10px;
+      background: rgba(255, 255, 255, 0.04);
+      text-align: center;
+      transition: all .35s ease;
+    }
+
+
+
+    section.mentoria-v2 .stat-value {
+      font-size: 2rem;
+      font-weight: 700;
+      color: #C9A84C;
+      display: block;
+      margin-bottom: 0.35rem;
+      line-height: 1;
+    }
+
+    section.mentoria-v2 .stat-value span {
+      font-size: 0.6em;
+      opacity: 0.7;
+    }
+
+    section.mentoria-v2 .stat-label {
+      font-size: 0.75rem;
+      color: #C2C6CD;
+      line-height: 1.3;
+    }
+
+    section.mentoria-v2 .mentoria-v2-who {
+      padding: 1.5rem;
+      border-left: 3px solid #C9A84C;
+      background: rgba(255, 255, 255, 0.03);
+      border-radius: 0 8px 8px 0;
+    }
+
+    section.mentoria-v2 .mentoria-v2-who h4 {
+      font-size: 0.8rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #C9A84C;
+      margin: 0 0 0.6rem;
+    }
+
+    section.mentoria-v2 .mentoria-v2-who p {
+      font-size: 0.95rem;
+      color: #C2C6CD;
+      line-height: 1.6;
+      margin: 0;
+    }
+
+    section.mentoria-v2 .mentoria-v2-who strong {
+      color: #F5F5F3;
+    }
+
+    section.mentoria-v2 .mentoria-v2-urgency {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      padding: 0.9rem 1.25rem;
+      background: rgba(201, 168, 76, 0.08);
+      border: 1px solid rgba(201, 168, 76, 0.2);
+      border-radius: 8px;
+    }
+
+    section.mentoria-v2 .urgency-dot {
+      width: 9px;
+      height: 9px;
+      border-radius: 50%;
+      background: #C9A84C;
+      flex-shrink: 0;
+      box-shadow: 0 0 0 0 rgba(201, 168, 76, 0.6);
+      /* animation: urgencyPulse 2s ease-out infinite; */
+    }
+
+    section.mentoria-v2 .mentoria-v2-urgency p {
+      font-size: 0.85rem;
+      color: #C2C6CD;
+      margin: 0;
+    }
+
+    section.mentoria-v2 .mentoria-v2-urgency strong {
+      color: #F5F5F3;
+    }
+
+    section.mentoria-v2 .mentoria-v2-right {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      gap: 1.35rem;
+      margin-top: 0;
+    }
+
+    section.mentoria-v2 .mentoria-v2-card {
+      padding: 2rem;
+      border: 1px solid rgba(255, 255, 255, 0.09);
+      border-radius: 18px;
+      background: rgba(255, 255, 255, 0.05);
+    }
+
+    section.mentoria-v2 .card-header {
+      display: flex;
+      justify-content: space-between;
+      gap: 1.5rem;
+      margin-bottom: 1.35rem;
+      padding-bottom: 1rem;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    section.mentoria-v2 .card-header h4 {
+      font-size: 1.4rem;
+      font-weight: 600;
+      color: #F5F5F3;
+      margin: 0;
+    }
+
+    .section-header-center {
+      text-align: center;
+      margin-bottom: 3.5rem;
+      width: 100%;
+    }
+
+    .section-header-center .label {
+      justify-content: center;
+      margin-bottom: 1.5rem;
+    }
+
+    .section-header-center .title-h2 {
+      max-width: 900px;
+      margin-inline: auto;
+      text-align: center;
+    }
+
+    section.mentoria-v2 .section-header-center .title-h2 {
+      max-width: min(980px, 100%);
+      white-space: normal;
+      font-size: clamp(2.4rem, 5.4vw, 4.5rem);
+      text-align: center;
+      margin-inline: auto;
+    }
+
+    section#posicionamento.split-section {
+      padding-bottom: clamp(28px, 3vw, 44px);
+    }
+
+    section#posicionamento.split-section::after {
+      content: '';
+      position: absolute;
+      left: max(24px, calc((100% - var(--container)) / 2));
+      right: max(24px, calc((100% - var(--container)) / 2));
+      bottom: 0;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, rgba(201, 168, 76, 0.42), transparent);
+    }
+
+    section#processo.method-section {
+      padding-top: clamp(28px, 3vw, 44px);
+    }
+
+    section.mentoria-v2 .card-header p {
+      max-width: 280px;
+      margin: 0;
+      font-size: 0.82rem;
+      line-height: 1.45;
+      color: rgba(194, 198, 205, 0.82);
+    }
+
+    section.mentoria-v2 .phase-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 0.9rem;
+      align-items: stretch;
+    }
+
+    section.mentoria-v2 .card-phase {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      min-width: 0;
+      overflow: hidden;
+      padding: 1.15rem;
+      border: 1px solid rgba(255, 255, 255, 0.07);
+      border-radius: 14px;
+      background: rgba(255, 255, 255, 0.035);
+      height: 100%;
+    }
+
+    section.mentoria-v2 .card-phase-featured {
+      border-color: rgba(201, 168, 76, 0.32);
+      background: linear-gradient(180deg, rgba(201, 168, 76, 0.12), rgba(255, 255, 255, 0.035));
+      box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.06);
+      width: 100%;
+      justify-self: stretch;
+      padding: 1.25rem;
+    }
+
+    section.mentoria-v2 .phase-marker {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 0.75rem;
+      margin-bottom: 0;
+    }
+
+    section.mentoria-v2 .phase-num {
+      width: 34px;
+      height: 34px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #C9A84C, #A0842D);
+      color: #0D182E;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 0.9rem;
+      flex-shrink: 0;
+    }
+
+    section.mentoria-v2 .phase-weeks {
+      padding-top: 0.35rem;
+      font-size: 0.68rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: #C9A84C;
+      text-align: right;
+    }
+
+    section.mentoria-v2 .phase-content h5 {
+      font-size: 1.02rem;
+      font-weight: 600;
+      color: #F5F5F3;
+      margin: 0 0 0.65rem;
+      line-height: 1.2;
+    }
+
+    section.mentoria-v2 .phase-content {
+      display: flex;
+      flex-direction: column;
+      flex: 1 1 auto;
+      min-width: 0;
+    }
+
+    section.mentoria-v2 .phase-content ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 0.42rem;
+    }
+
+    section.mentoria-v2 .phase-content li {
+      font-size: 0.8rem;
+      color: #C2C6CD;
+      padding-left: 1rem;
+      position: relative;
+      line-height: 1.38;
+      overflow-wrap: break-word;
+      word-break: break-word;
+    }
+
+    section.mentoria-v2 .phase-content li::before {
+      content: '→';
+      position: absolute;
+      left: 0;
+      color: #C9A84C;
+      font-weight: 600;
+    }
+
+    section.mentoria-v2 .mentoria-v2-proof {
+      padding: 0.5rem 0.85rem;
+      border: 1px solid rgba(201, 168, 76, 0.25);
+      border-radius: 14px;
+      background: rgba(201, 168, 76, 0.07);
+    }
+
+    section.mentoria-v2 .proof-quote {
+      font-size: 0.74rem;
+      font-style: italic;
+      color: #F5F5F3;
+      line-height: 1.45;
+      margin-bottom: 0.3rem;
+    }
+
+    section.mentoria-v2 .proof-author strong {
+      display: block;
+      font-size: 0.75rem;
+      color: #C9A84C;
+      margin-bottom: 0.1rem;
+      font-style: normal;
+    }
+
+    section.mentoria-v2 .proof-author span {
+      font-size: 0.7rem;
+      color: #7C8490;
+    }
+
+    @media (max-width: 1024px) {
+      section.mentoria-v2 .mentoria-v2-split {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+      }
+
+      section.mentoria-v2 .mentoria-v2-left {
+        position: static;
+        align-items: center;
+        text-align: center;
+      }
+
+      section.mentoria-v2 .mentoria-v2-urgency {
+        justify-content: center;
+      }
+
+      section.mentoria-v2 .mentoria-v2-right {
+        margin-top: 0;
+        justify-content: flex-start;
+      }
+
+      section.mentoria-v2 .phase-grid {
+        grid-template-columns: 1fr;
+      }
+
+      section.mentoria-v2 .card-header {
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+
+      section.mentoria-v2 .card-header p {
+        max-width: 100%;
+      }
+    }
+
+    @media (max-width: 640px) {
+      section.mentoria-v2 {
+        text-align: center;
+      }
+
+      section.mentoria-v2 .container {
+        padding-inline: 20px;
+      }
+
+      section.mentoria-v2 .mentoria-v2-split {
+        width: 100%;
+        gap: 1.25rem;
+        justify-items: center;
+      }
+
+      section.mentoria-v2 .mentoria-v2-left,
+      section.mentoria-v2 .mentoria-v2-right {
+        width: 100%;
+        max-width: 360px;
+        align-items: center;
+        text-align: center;
+        margin-inline: auto;
+      }
+
+      section.mentoria-v2 .mentoria-v2-promise {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        padding: 1.25rem 1rem;
+      }
+
+      section.mentoria-v2 .mentoria-v2-stats {
+        grid-template-columns: 1fr;
+        gap: 0.75rem;
+        width: 100%;
+        max-width: 320px;
+      }
+
+      section.mentoria-v2 .stat-box {
+        padding: 1rem;
+      }
+
+      section.mentoria-v2 .stat-value {
+        font-size: 1.7rem;
+      }
+
+      section.mentoria-v2 .mentoria-v2-who {
+        width: 100%;
+        padding: 1.25rem 1rem;
+        border-left: 0;
+        border-top: 3px solid #C9A84C;
+        border-radius: 8px;
+        text-align: center;
+      }
+
+      section.mentoria-v2 .mentoria-v2-who p,
+      section.mentoria-v2 .mentoria-v2-urgency p,
+      section.mentoria-v2 .card-header p,
+      section.mentoria-v2 .proof-quote,
+      section.mentoria-v2 .proof-author span {
+        text-align: center !important;
+      }
+
+      section.mentoria-v2 .btn-gold {
+        width: 100%;
+        max-width: 320px;
+        justify-content: center;
+      }
+
+      section.mentoria-v2 .mentoria-v2-urgency {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+      }
+
+      section.mentoria-v2 .mentoria-v2-card,
+      section.mentoria-v2 .mentoria-v2-proof {
+        width: 100%;
+        text-align: center;
+      }
+
+      section.mentoria-v2 .mentoria-v2-card {
+        padding: 1.25rem;
+      }
+
+      section.mentoria-v2 .card-header {
+        align-items: center;
+        text-align: center;
+      }
+
+      section.mentoria-v2 .card-header p {
+        margin-inline: auto;
+      }
+
+      section.mentoria-v2 .card-phase {
+        align-items: center;
+        text-align: center;
+        padding: 1rem;
+      }
+
+      section.mentoria-v2 .phase-content ul {
+        align-items: center;
+      }
+
+      section.mentoria-v2 .phase-content li {
+        max-width: 28ch;
+        padding-left: 0;
+        text-align: center !important;
+      }
+
+      section.mentoria-v2 .phase-content li::before {
+        position: static;
+        margin-right: 0.35rem;
+      }
+
+      section.mentoria-v2 .phase-marker {
+        justify-content: center;
+      }
+
+      section.mentoria-v2 .card-phase-featured .phase-marker {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+      }
+
+      section.mentoria-v2 .card-phase-featured .phase-weeks {
+        padding-top: 0;
+        text-align: center;
+      }
+
+      section.mentoria-v2 .card-phase-featured .phase-content h5 {
+        font-size: 0.98rem;
+        line-height: 1.12;
+        margin-bottom: 0.55rem;
+      }
+
+      section.mentoria-v2 .card-phase-featured .phase-content ul {
+        gap: 0.35rem;
+      }
+
+      section.mentoria-v2 .card-phase-featured .phase-content li {
+        font-size: 0.78rem;
+        line-height: 1.32;
+      }
+    }
+
+    /* ═══════════════════════════════════════════════
+       WHATSAPP FLOAT BUTTON
+    ═══════════════════════════════════════════════ */
+    .wa-float {
+      position: fixed;
+      bottom: 28px;
+      right: 28px;
+      z-index: 9990;
+      width: 56px;
+      height: 56px;
+      background: #25D366;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      box-shadow: 0 6px 24px rgba(37, 211, 102, 0.45);
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+
+    .wa-float:hover {
+      transform: scale(1.1);
+      box-shadow: 0 10px 32px rgba(37, 211, 102, 0.6);
+    }
+
+    /* ═══════════════════════════════════════════════
+       LEAD MODAL
+    ═══════════════════════════════════════════════ */
+    .wa-modal-overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(13, 24, 46, 0.75);
+      backdrop-filter: blur(6px);
+      z-index: 9999;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 1rem;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.3s ease;
+    }
+
+    .wa-modal-overlay.open {
+      opacity: 1;
+      pointer-events: all;
+    }
+
+    .wa-modal {
+      background: #ffffff;
+      border-radius: 20px;
+      padding: 2.5rem;
+      width: 100%;
+      max-width: 480px;
+      position: relative;
+      transform: translateY(20px) scale(0.97);
+      transition: transform 0.35s cubic-bezier(0.23, 1, 0.32, 1);
+      box-shadow: 0 40px 100px rgba(13, 24, 46, 0.3);
+    }
+
+    .wa-modal-overlay.open .wa-modal {
+      transform: translateY(0) scale(1);
+    }
+
+    .wa-modal-close {
+      position: absolute;
+      top: 1.25rem;
+      right: 1.25rem;
+      width: 36px;
+      height: 36px;
+      border: none;
+      background: rgba(13, 24, 46, 0.07);
+      border-radius: 50%;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #3D4452;
+      transition: background 0.2s ease;
+    }
+
+    .wa-modal-close:hover { background: rgba(13, 24, 46, 0.14); }
+    .wa-modal-close i { width: 18px; height: 18px; }
+
+    .wa-modal-header {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 2rem;
+      padding-right: 2rem;
+    }
+
+    .wa-modal-icon {
+      width: 52px;
+      height: 52px;
+      background: #C9A84C;
+      border-radius: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #ffffff;
+      flex-shrink: 0;
+    }
+
+    .wa-modal-overlay[data-channel="whatsapp"] .wa-modal-icon {
+      background: #25D366;
+    }
+
+    .wa-modal-header h3 {
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: #0D182E;
+      margin: 0 0 0.25rem;
+    }
+
+    .wa-modal-header p {
+      font-size: 0.85rem;
+      color: #7C8490;
+      margin: 0;
+    }
+
+    .wa-modal-form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .wa-form-field {
+      display: flex;
+      flex-direction: column;
+      gap: 0.35rem;
+    }
+
+    .wa-form-field label {
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: #3D4452;
+    }
+
+    .wa-form-field label span { color: #C9A84C; }
+
+    .wa-form-field input {
+      width: 100%;
+      height: 48px;
+      padding: 0 0.9rem;
+      border: 1.5px solid rgba(13, 24, 46, 0.15);
+      border-radius: 10px;
+      background: #FAFAFA;
+      color: #0D182E;
+      font-family: 'Poppins', sans-serif;
+      font-size: 0.95rem;
+      box-sizing: border-box;
+      transition: border-color 0.2s ease, box-shadow 0.2s ease;
+      outline: none;
+    }
+
+    .wa-form-field input:focus {
+      border-color: #C9A84C;
+      box-shadow: 0 0 0 3px rgba(201, 168, 76, 0.15);
+    }
+
+    .wa-form-field input.wa-error { border-color: #e74c3c; }
+
+    .wa-form-field textarea {
+      width: 100%;
+      min-height: 110px;
+      padding: 0.75rem 0.9rem;
+      border: 1.5px solid rgba(13, 24, 46, 0.15);
+      border-radius: 10px;
+      background: #FAFAFA;
+      color: #0D182E;
+      font-family: 'Poppins', sans-serif;
+      font-size: 0.95rem;
+      box-sizing: border-box;
+      resize: vertical;
+      transition: border-color 0.2s ease, box-shadow 0.2s ease;
+      outline: none;
+      line-height: 1.6;
+    }
+
+    .wa-form-field textarea::placeholder { color: #9ca3af; }
+
+    .wa-form-field textarea:focus {
+      border-color: #C9A84C;
+      box-shadow: 0 0 0 3px rgba(201, 168, 76, 0.15);
+    }
+
+    .wa-modal-submit {
+      width: 100%;
+      margin-top: 0.5rem;
+      justify-content: center;
+    }
+
+    /* Contact form fallback for cached server CSS */
+    .contato .contato-meta {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .contato .contato-form-card {
+      max-width: 1120px;
+      margin: 1.1rem auto 0;
+      padding: clamp(1.25rem, 3vw, 2rem);
+      background: #FFFFFF;
+      color: #0D182E;
+      border: 1px solid rgba(201, 168, 76, 0.16);
+      border-radius: 18px;
+      box-shadow: 0 28px 80px rgba(0, 0, 0, 0.28);
+      text-align: left;
+    }
+
+    .contato .contato-form {
+      display: flex;
+      flex-direction: column;
+      gap: 0.9rem;
+    }
+
+    .contato .contato-form-grid,
+    .contato .contato-form-services {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 0.9rem;
+    }
+
+    .contato .form-field {
+      display: flex;
+      flex-direction: column;
+      gap: 0.35rem;
+    }
+
+    .contato .form-field input,
+    .contato .form-field textarea {
+      width: 100%;
+      min-height: 48px;
+      padding: 0.8rem 0.9rem;
+      border: 1px solid rgba(13, 24, 46, 0.18);
+      border-radius: 8px;
+      background: #FAFAFA;
+      color: #0D182E;
+      font-family: 'Poppins', sans-serif;
+      font-size: 0.95rem;
+      line-height: 1.45;
+      box-sizing: border-box;
+    }
+
+    .contato .contato-form-services {
+      border: 0;
+      padding: 0;
+      margin: 0.1rem 0 0;
+    }
+
+    .contato .contato-form-services legend {
+      grid-column: 1 / -1;
+    }
+
+    .contato .contato-form-services label,
+    .contato .contato-consent {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.45rem;
+    }
+
+    @media (max-width: 900px) {
+      .contato .contato-meta {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 520px) {
+      .contato .contato-form-grid,
+      .contato .contato-form-services {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
 </head>
 
 <body>
 
-
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T35GZ6V7"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
 
   <!-- Grain overlay -->
-  <div class="noise" aria-hidden="true"></div>
 
   <!-- Global grid texture -->
   <div class="global-grid" aria-hidden="true"></div>
@@ -33,32 +1271,28 @@
 
   <!-- ══════════════════════ NAVBAR ══════════════════════ -->
   <nav class="navbar" id="navbar">
-    <a href="#top" class="nav-logo" data-hover>
-      <div class="nav-logo-icon">
-        <span></span><span></span><span></span><span></span>
-      </div>
-      <div class="nav-logo-text">
-        E4D
-        <small>Consultoria</small>
-      </div>
-    </a>
+    <div class="nav-inner">
+      <a href="#top" class="nav-logo" data-hover>
+        <img src="imagens/logo-optimized.png?v=20260507" alt="E4D" class="nav-logo-img" width="164" height="123" fetchpriority="high">
+      </a>
 
-    <div class="nav-links">
-      <a href="#posicionamento" class="nav-link" data-hover>Posicionamento</a>
-      <a href="#processo" class="nav-link" data-hover>Método</a>
-      <a href="#pilares" class="nav-link" data-hover>Pilares</a>
-      <a href="#entregaveis" class="nav-link" data-hover>Entregáveis</a>
-      <a href="#mentoria" class="nav-link" data-hover>Mentoria</a>
-      <a href="#resultados" class="nav-link" data-hover>Resultados</a>
+      <div class="nav-links">
+        <a href="#posicionamento" class="nav-link" data-hover>Posicionamento</a>
+        <a href="#processo" class="nav-link" data-hover>Método</a>
+        <a href="#pilares" class="nav-link" data-hover>Pilares</a>
+        <a href="#entregaveis" class="nav-link" data-hover>Entregáveis</a>
+        <a href="#mentoria" class="nav-link" data-hover>Mentoria</a>
+        <a href="#resultados" class="nav-link" data-hover>Resultados</a>
+      </div>
+
+      <a href="#contato" class="btn btn-gold-sm magnetic" data-hover data-lead-modal>
+        <span>Fale com a E4D <i data-lucide="arrow-up-right"></i></span>
+      </a>
+
+      <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Abrir menu">
+        <i data-lucide="menu"></i>
+      </button>
     </div>
-
-    <a href="#contato" class="btn btn-gold-sm magnetic" data-hover>
-      <span>Fale com a E4D <i data-lucide="arrow-up-right"></i></span>
-    </a>
-
-    <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Abrir menu">
-      <i data-lucide="menu"></i>
-    </button>
   </nav>
 
   <!-- Mobile menu -->
@@ -69,7 +1303,7 @@
     <a href="#entregaveis" class="mobile-link">Entregáveis</a>
     <a href="#mentoria" class="mobile-link">Mentoria</a>
     <a href="#resultados" class="mobile-link">Resultados</a>
-    <a href="#contato" class="btn btn-gold mobile-cta"><span>Fale com a E4D <i
+    <a href="#contato" class="btn btn-gold mobile-cta" data-lead-modal><span>Fale com a E4D <i
           data-lucide="arrow-up-right"></i></span></a>
   </div>
 
@@ -81,25 +1315,18 @@
 
     <div class="container hero-inner">
       <div class="hero-left">
-        <div class="hero-eyebrow">
-          <span class="hero-eyebrow-label">Consultoria de Alto Padrão</span>
-          <span class="hero-eyebrow-loc"><i data-lucide="map-pin"></i> RJ + Macaé</span>
-        </div>
-
         <h1 class="hero-title">
-          <span>Aumente a eficiência</span>
-          <span>da sua operação</span>
-          <span>em até <em class="gold-text">28%</em> em</span>
-          <span><em class="gold-text">12 semanas.</em></span>
+          <span>Gestão estratégica para</span>
+          <span>clínicas e <strong>hospitais</strong></span>
+          <span><em class="gold-text">mais eficientes.</em></span>
         </h1>
 
         <p class="hero-desc">
-          A <strong>E4D Consultoria</strong> organiza o que estava fragmentado, mensura o que era invisível e transforma
-          gestão reativa em inteligência operacional.
+          A <strong>E4D Consultoria</strong> ajuda clínicas e hospitais a organizar processos, reduzir desperdícios e fortalecer equipes para entregar uma operação mais previsível, produtiva e centrada no paciente.
         </p>
 
         <div class="hero-actions">
-          <a href="#contato" class="btn btn-gold magnetic" data-hover>
+          <a href="#contato" class="btn btn-gold magnetic" data-hover data-lead-modal>
             <span>AGENDAR DIAGNÓSTICO <i data-lucide="arrow-up-right"></i></span>
           </a>
           <a href="#resultados" class="btn-ghost-hero magnetic" data-hover>
@@ -109,16 +1336,12 @@
 
         <dl class="hero-stats">
           <div class="hero-stat">
+            <dt>4<span> pilares</span></dt>
+            <dd>de atuação integrados</dd>
+          </div>
+          <div class="hero-stat">
             <dt>30<span>+</span></dt>
-            <dd>Hospitais e clínicas reestruturados</dd>
-          </div>
-          <div class="hero-stat">
-            <dt>28<span>%</span></dt>
-            <dd>Economia operacional comprovada</dd>
-          </div>
-          <div class="hero-stat">
-            <dt>84<span>d</span></dt>
-            <dd>Prazo médio de implementação</dd>
+            <dd>empresas atendidas</dd>
           </div>
         </dl>
       </div>
@@ -139,17 +1362,17 @@
         <div class="hero-panel-body">
           <div class="hero-kpi-row">
             <div class="hero-kpi">
-              <div class="hero-kpi-label">Margem de Lucro</div>
-              <div class="hero-kpi-value">+28<span>%</span></div>
+              <div class="hero-kpi-label">Custos Operacionais</div>
+              <div class="hero-kpi-value">-28<span>%</span></div>
               <div class="hero-kpi-trend hero-kpi-up">
-                <i data-lucide="trending-up"></i> Acima da média
+                <i data-lucide="trending-down"></i> Redução mapeada
               </div>
             </div>
             <div class="hero-kpi">
-              <div class="hero-kpi-label">Custos Ocultos</div>
-              <div class="hero-kpi-value hero-kpi-value-alt">-15<span>%</span></div>
+              <div class="hero-kpi-label">Projetos Reestruturados</div>
+              <div class="hero-kpi-value hero-kpi-value-alt">30<span>+</span></div>
               <div class="hero-kpi-trend hero-kpi-down">
-                <i data-lucide="trending-down"></i> Gasto reduzido
+                <i data-lucide="building-2"></i> Empresas atendidas
               </div>
             </div>
           </div>
@@ -202,67 +1425,223 @@
   <section class="split-section split-left" id="posicionamento">
     <div class="split-container">
       <div class="split-image">
-        <img src="imagens/tech_room.png" alt="Ambiente de tecnologia" class="split-img">
+        <img src="imagens/section-1-optimized.jpg?v=20260507" alt="Posicionamento E4D" class="split-img" width="1200" height="675" loading="lazy" decoding="async">
         <div class="split-overlay"></div>
-        <div class="float-card">
-          <div class="float-num">30<span>+</span></div>
-          <div class="float-text">Hospitais e clínicas reestruturados</div>
-        </div>
+
+        <div class="split-accent"></div>
       </div>
 
       <div class="split-content">
         <div class="label"><span class="line"></span> 01 — Posicionamento</div>
-        <h2 class="title-h2">Transformando <em>caos em sistema.</em></h2>
-        <p class="desc">Clínicas e hospitais vivem sob pressão constante. Decisões erradas custam caro — financeira e humanamente. A E4D entra como a força que organiza o que estava fragmentado, mensura o que era invisível.</p>
+        <h2 class="title-h2">Estrutura onde <em>havia improviso.</em></h2>
+        <p class="desc">Clínicas, hospitais e empresas operam sob pressão constante. Decisões mal embasadas custam caro, tanto no resultado financeiro quanto na rotina da operação. A E4D entra para organizar o que está fragmentado, dar visibilidade ao que hoje passa despercebido e criar estrutura onde ainda há improviso.</p>
 
         <div class="traits">
           <span class="trait">Autoridade técnica</span>
-          <span class="trait">Precisão cirúrgica</span>
-          <span class="trait">Confiança estrutural</span>
-          <span class="trait">Resultado mensurável</span>
+          <span class="trait">Execução em campo</span>
+          <!-- <span class="trait">Confiança estrutural</span> -->
+          <!-- <span class="trait">Resultado mensurável</span> -->
         </div>
 
         <blockquote class="split-quote">
-          Não somos mais uma consultoria. Somos a <em>estrutura</em> que faltava na sua operação.
+          Não entregamos um relatório e vamos embora. Atuamos lado a lado até que cada área ganhe <em>ritmo e autonomia.</em>
         </blockquote>
       </div>
     </div>
   </section>
 
   <!-- ══════════════════════ MÉTODO ══════════════════════ -->
-  <section class="split-section split-right" id="processo">
-    <div class="split-container">
-      <div class="split-content">
+  <section class="method-section" id="processo">
+    <div class="container">
+      <header class="section-header">
         <div class="label"><span class="line"></span> 02 — Método</div>
         <h2 class="title-h2">Quatro etapas para <em>reestruturar.</em></h2>
-        <p class="desc">Um método testado em mais de 30 projetos. Cada fase tem escopo claro, prazo definido e entrega verificável.</p>
-        <ol class="timeline-list">
-          <li><div class="timeline-num">01</div><div class="timeline-body"><div class="timeline-title">Diagnóstico</div><p>Imersão, indicadores, entrevistas. Mapa de causa-raiz com evidências.</p></div></li>
-          <li><div class="timeline-num">02</div><div class="timeline-body"><div class="timeline-title">Estruturação</div><p>Redesenho de processos, plano priorizado, rituais de gestão.</p></div></li>
-          <li><div class="timeline-num">03</div><div class="timeline-body"><div class="timeline-title">Implementação</div><p>Execução em campo, treinamento, projetos-piloto e ajustes.</p></div></li>
-          <li><div class="timeline-num">04</div><div class="timeline-body"><div class="timeline-title">Acompanhamento</div><p>Governança mensal, painel de indicadores, revisão trimestral.</p></div></li>
-        </ol>
-      </div>
-      <div class="split-image">
-        <img src="imagens/dashboard.png" alt="Dashboard de gestão" class="split-img">
-        <div class="split-overlay"></div>
-        <div class="device-badge"><div class="badge-dot"></div><span>Sistema Ativo</span></div>
+        <p class="desc-center">Um método aplicado em mais de 30 empresas. Cada fase tem escopo claro, prazo definido e
+          entrega verificável.</p>
+      </header>
+
+      <div class="method-body-split">
+        <div class="method-row">
+          <div class="method-card-new">
+            <div class="method-icon"><i data-lucide="search"></i></div>
+            <div class="method-card-body">
+              <h3>Diagnóstico</h3>
+              <p>Levantamento completo dos gargalos operacionais e financeiros.</p>
+              <ul class="method-features">
+                <li><i data-lucide="check"></i> Auditoria de processos</li>
+                <li><i data-lucide="check"></i> Entrevistas com líderes</li>
+                <li><i data-lucide="check"></i> Mapa de causa-raiz</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="method-card-new">
+            <div class="method-icon"><i data-lucide="layout"></i></div>
+            <div class="method-card-body">
+              <h3>Estruturação</h3>
+              <p>Redesenho da estrutura de gestão e dos fluxos críticos.</p>
+              <ul class="method-features">
+                <li><i data-lucide="check"></i> Novos rituais de gestão</li>
+                <li><i data-lucide="check"></i> Definição de KPIs</li>
+                <li><i data-lucide="check"></i> Organograma funcional</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="method-card-new">
+            <div class="method-icon"><i data-lucide="zap"></i></div>
+            <div class="method-card-body">
+              <h3>Implementação</h3>
+              <p>Execução em campo com suporte técnico próximo.</p>
+              <ul class="method-features">
+                <li><i data-lucide="check"></i> Treinamento de times</li>
+                <li><i data-lucide="check"></i> Pilotos controlados</li>
+                <li><i data-lucide="check"></i> Ajustes durante a implantação</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="method-card-new">
+            <div class="method-icon"><i data-lucide="trending-up"></i></div>
+            <div class="method-card-body">
+              <h3>Acompanhamento</h3>
+              <p>Rotina de acompanhamento para sustentar os resultados no dia a dia.</p>
+              <ul class="method-features">
+                <li><i data-lucide="check"></i> Governança mensal</li>
+                <li><i data-lucide="check"></i> Dashboards ativos</li>
+                <li><i data-lucide="check"></i> Revisão trimestral</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="chart-block method-chart-block">
+          <p class="chart-eyebrow">Curva de Tuckman aplicada ao processo de reestruturação</p>
+          <h3 class="chart-heading">Maturidade da equipe ao longo <em>do processo</em></h3>
+          <p class="chart-subtext">Toda reestruturação começa com adaptação, passa por uma queda natural de tensão e evolui até um novo ritmo de trabalho. Quando esse processo é bem conduzido, a equipe chega a uma fase consistente de alta performance.</p>
+          <div class="chart-canvas-wrap">
+            <canvas id="chart-linha"></canvas>
+          </div>
+          <div class="chart-phases">
+            <span style="flex:2">Formação<small>Diagnóstico inicial</small></span>
+            <span style="flex:3">Confronto<small>Primeiras mudanças</small></span>
+            <span style="flex:4">Normalização<small>Ritmo estabelecido</small></span>
+            <span style="flex:3">Alta Performance<small>Resultados sustentáveis</small></span>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- ══════════════════════ PILARES ══════════════════════ -->
-  <section class="pilares-section" id="pilares">
+  <!-- ══════════════════════ PILARES V2 ══════════════════════ -->
+  <section class="pilares-v2" id="pilares">
+    <div class="pilares-v2-bg"></div>
+
     <div class="container">
-      <header class="section-header">
+      <div class="pilares-v2-intro">
         <div class="label"><span class="line"></span> 03 — Áreas de atuação</div>
-        <h2 class="title-h2">Os quatro pilares <em>da sua operação.</em></h2>
-      </header>
-      <div class="pilares-grid">
-        <article class="pilar-item" data-hover><div class="pilar-icon"><i data-lucide="line-chart"></i></div><div class="pilar-num">01</div><h3>Gestão &<em>Estratégia</em></h3><p>Análise físico-financeira, mapeamento de contratos, revisão de custos.</p><ul><li>OPEX e CAPEX</li><li>Cruzamento físico-financeiro</li><li>Renegociação com fornecedores</li></ul></article>
-        <article class="pilar-item" data-hover><div class="pilar-icon"><i data-lucide="users"></i></div><div class="pilar-num">02</div><h3>Desenvolvimento de <em>Lideranças</em></h3><p>Análise comportamental, treinamento de gestão, mentoria estruturada.</p><ul><li>Perfil comportamental</li><li>Ferramentas de decisão</li><li>Mentoria E.A.V. — 12 semanas</li></ul></article>
-        <article class="pilar-item" data-hover><div class="pilar-icon"><i data-lucide="heart-handshake"></i></div><div class="pilar-num">03</div><h3>Experiência do<em>Paciente</em></h3><p>Recepção humanizada, logística interna redesenhada, jornada otimizada.</p><ul><li>Atendimento humanizado</li><li>Redesenho de fluxos</li><li>Redução de gargalos</li></ul></article>
-        <article class="pilar-item" data-hover><div class="pilar-icon"><i data-lucide="settings-2"></i></div><div class="pilar-num">04</div><h3>Engenharia &<em>Infraestrutura</em></h3><p>Manutenção predial, engenharia clínica, acreditações, segurança.</p><ul><li>Gestão de utilidades</li><li>Laudos de conformidade</li><li>Preparação JCI/ONA</li></ul></article>
+        <h2 class="title-h2 reveal-title">Quatro pilares.<br><em>Uma operação&nbsp;que funciona.</em></h2>
+      </div>
+
+      <div class="pilares-v2-main">
+        <div class="pilares-v2-featured">
+          <div class="featured-header">
+            <div class="featured-num">01</div>
+            <div class="featured-title-group">
+              <h3>Gestão & Estratégia</h3>
+              <div class="featured-metric">
+                <span class="metric-value">gestão</span>
+                <span class="metric-label">físico-financeira integrada</span>
+              </div>
+            </div>
+          </div>
+
+          <p class="featured-desc">Identificamos onde a margem está se perdendo: auditoria físico-financeira, mapeamento de contratos,
+            renegociação com fornecedores e revisão de cada linha de custo. Você recebe um plano executivo com metas,
+            prazos e responsáveis, pensado para sair do papel.</p>
+
+          <div class="featured-grid">
+            <div class="featured-item">
+              <i data-lucide="search"></i>
+              <div>
+                <strong>Análise profunda</strong>
+                <p>OPEX, CAPEX, contratos, operadoras</p>
+              </div>
+            </div>
+            <div class="featured-item">
+              <i data-lucide="target"></i>
+              <div>
+                <strong>Renegociação ativa</strong>
+                <p>Redução de custos com fornecedores e contratos</p>
+              </div>
+            </div>
+            <div class="featured-item">
+              <i data-lucide="trending-up"></i>
+              <div>
+                <strong>Indicadores de gestão</strong>
+                <p>Métricas de desempenho e governança</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="featured-deliverables">
+            <strong>Entregas aplicadas:</strong>
+            <span>mapa de desperdícios, matriz de prioridade, plano de redução de custos e rotina de acompanhamento com indicadores semanais.</span>
+          </div>
+
+          <div class="featured-footer">
+            <span class="featured-time"><i data-lucide="clock"></i> Etapa inicial</span>
+            <span class="featured-roi">Indicadores para acompanhar a evolução</span>
+          </div>
+        </div>
+
+        <div class="pilares-v2-stack">
+          <div class="stack-card" data-pilar="2">
+            <div class="stack-header">
+              <span class="stack-num">02</span>
+              <h4>Desenvolvimento de Lideranças</h4>
+            </div>
+            <p>Análise de perfil, mentoria estruturada e treinamento de gestão. Lideranças que alinham times e entregam resultados
+              consistentes.</p>
+            <div class="stack-highlight">
+              Times alinhados e produtivos
+            </div>
+          </div>
+
+          <div class="stack-card" data-pilar="3">
+            <div class="stack-header">
+              <span class="stack-num">03</span>
+              <h4>Experiência do Paciente</h4>
+            </div>
+            <p>Jornada mapeada do agendamento à alta. Atendimento humanizado, fluxos internos claros e experiência do paciente aprimorada.
+            </p>
+            <div class="stack-highlight">
+              Experiência do paciente
+            </div>
+          </div>
+
+          <div class="stack-card" data-pilar="4">
+            <div class="stack-header">
+              <span class="stack-num">04</span>
+              <h4>Engenharia & Infraestrutura</h4>
+            </div>
+            <p>Conformidade técnica, manutenção predial e preparação para JCI/ONA. Segurança operacional sem surpresas.
+            </p>
+            <div class="stack-highlight">
+              Conformidade técnica e regulatória
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="pilares-v2-cta">
+        <div class="cta-content">
+          <p class="cta-eyebrow">Atuação modular ou paralela</p>
+          <p class="cta-main">Os quatro pilares podem avançar em paralelo ou em módulos independentes, sempre com escopo claro, equipe dedicada e <strong>entregas verificáveis</strong> em cada etapa.</p>
+        </div>
+        <a href="#contato" class="btn btn-gold magnetic" data-hover data-lead-modal>
+          <span>Agendar diagnóstico operacional <i data-lucide="arrow-right"></i></span>
+        </a>
       </div>
     </div>
   </section>
@@ -270,23 +1649,13 @@
   <!-- ══════════════════════ ENTREGÁVEIS ══════════════════════ -->
   <section class="entregaveis" id="entregaveis">
     <div class="entregaveis-bg" aria-hidden="true">
-      <img src="imagens/tech_room.png" alt="" class="entregaveis-bg-img" id="entregaveis-bg-img">
       <div class="entregaveis-bg-overlay"></div>
     </div>
 
     <div class="container">
-      <header class="section-header">
+      <header class="section-header section-header-center">
         <div class="label label-light"><span class="line line-light"></span> 04 — Entregáveis</div>
-        <div class="section-header-row">
-          <h2 class="title-h2 title-light reveal-title">
-            O que está<br>
-            <em>dentro do escopo.</em>
-          </h2>
-          <p class="desc desc-light section-header-desc">
-            Cada frente se desdobra em entregas concretas. Selecione um pilar para ver
-            exatamente o que é executado em campo.
-          </p>
-        </div>
+        <h2 class="title-h2 title-light reveal-title">O que está <em>dentro do escopo.</em></h2>
       </header>
 
       <div class="entregaveis-tabs">
@@ -368,11 +1737,11 @@
             <div class="panel-block">
               <div class="panel-block-label">Mentoria Empresa de Alto Valor</div>
               <ul class="panel-list">
-                <li>12 semanas de mentoria estruturada</li>
+                <li>Programa estruturado de mentoria</li>
                 <li>Liderança, gestão e comunicação</li>
-                <li>Análise comportamental</li>
-                <li>Métricas de desempenho</li>
-                <li>Estratégias de alta performance</li>
+                <li>Análise comportamental aplicada</li>
+                <li>Métricas de desempenho individual</li>
+                <li>Desenvolvimento progressivo de gestão</li>
               </ul>
             </div>
           </div>
@@ -431,7 +1800,7 @@
               <ul class="panel-list">
                 <li>Auditoria completa</li>
                 <li>Prevenção de riscos</li>
-                <li>Garantia de conformidade regulatória</li>
+                <li>Condução com foco em conformidade regulatória</li>
               </ul>
             </div>
           </div>
@@ -443,127 +1812,45 @@
 
   <!-- ══════════════════════ FERRAMENTAS / GALLERY ══════════════════════ -->
   <section class="gallery-section" id="ferramentas">
-    <div class="exemplos-bg" aria-hidden="true">
-      <div class="exemplos-accent-1"></div>
-      <div class="exemplos-accent-2"></div>
-    </div>
-
     <div class="container">
       <header class="section-header">
-        <div class="label"><span class="line"></span> Exemplos Práticos</div>
-        <div class="section-header-row">
-          <h2 class="title-h2 reveal-title">
-            Transformação<br>
-            <em>em evidência.</em>
-          </h2>
-          <p class="desc section-header-desc">
-            Ferramentas, sistemas e processos que entregam resultado mensurável.
-            Cada projeto é prova viva de como estrutura e disciplina funcionam juntas.
-          </p>
-        </div>
+        <div class="label"><span class="line"></span> O que entregamos</div>
+        <h2 class="title-h2">Ferramentas em <em>campo.</em></h2>
       </header>
 
-      <div class="exemplos-grid">
-        <div class="exemplo-card exemplo-card-large" data-hover>
-          <div class="exemplo-image">
-            <img src="imagens/dashboard.png" alt="Dashboard de Inteligência Operacional" class="exemplo-img">
-            <div class="exemplo-overlay"></div>
-            <div class="exemplo-tag exemplo-tag-primary">Inteligência Operacional</div>
-          </div>
-          <div class="exemplo-content">
-            <div class="exemplo-badge"><i data-lucide="activity"></i> Sistema Ativo</div>
-            <h3 class="exemplo-title">Dashboard de BI</h3>
-            <p class="exemplo-desc">
-              Sistema de indicadores em tempo real que transforma dados brutos em decisões estratégicas.
-              Centraliza métricas de todas as operações em um único painel.
-            </p>
-            <ul class="exemplo-features">
-              <li><i data-lucide="check-circle-2"></i> KPIs em tempo real</li>
-              <li><i data-lucide="check-circle-2"></i> Alertas automáticos</li>
-              <li><i data-lucide="check-circle-2"></i> Histórico de 12 meses</li>
-            </ul>
-            <a href="#contato" class="exemplo-link" data-hover>Conhecer sistema <i data-lucide="arrow-right"></i></a>
-          </div>
-        </div>
-
-        <div class="exemplo-card" data-hover>
-          <div class="exemplo-image">
-            <img src="imagens/eficiencia-3-linhas.png" alt="Análise de Eficiência Operacional" class="exemplo-img">
-            <div class="exemplo-overlay"></div>
-            <div class="exemplo-tag">Operacional</div>
-          </div>
-          <div class="exemplo-content">
-            <div class="exemplo-badge"><i data-lucide="trending-down"></i> Otimização</div>
-            <h3 class="exemplo-title">Análise de Eficiência</h3>
-            <p class="exemplo-desc">
-              Mapeamento de gargalos com precisão cirúrgica.
-            </p>
-            <a href="#contato" class="exemplo-link" data-hover>Saiba mais <i data-lucide="arrow-right"></i></a>
-          </div>
-        </div>
-
-        <div class="exemplo-card" data-hover>
-          <div class="exemplo-image">
-            <img src="imagens/eficiencia-3-linhas-inline.png" alt="Métricas de Desempenho" class="exemplo-img">
-            <div class="exemplo-overlay"></div>
-            <div class="exemplo-tag">Gestão</div>
-          </div>
-          <div class="exemplo-content">
-            <div class="exemplo-badge"><i data-lucide="bar-chart-2"></i> Métricas</div>
-            <h3 class="exemplo-title">KPIs Estruturados</h3>
-            <p class="exemplo-desc">
-              Indicadores alinhados com objetivos estratégicos.
-            </p>
-            <a href="#contato" class="exemplo-link" data-hover>Saiba mais <i data-lucide="arrow-right"></i></a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ══════════════════════ FILOSOFIA / QUOTE ══════════════════════ -->
-  <section class="filosofia">
-    <div class="container filosofia-grid">
-      <div class="filosofia-visual">
-        <img src="imagens/dashboard.png" alt="Dashboard de gestão E4D" class="filosofia-img">
-        <div class="filosofia-visual-frame" aria-hidden="true"></div>
-        <div class="filosofia-visual-tag">
-          <span class="dot-gold"></span>
-          Inteligência operacional
-        </div>
-      </div>
-      <div class="filosofia-content">
-        <div class="label"><span class="line"></span> Filosofia</div>
-        <h2 class="title-h2 filosofia-quote reveal-title">
-          <em>"Clínicas não falham</em><br>
-          por falta de médico bom.<br>
-          <em>Falham</em> por falta<br>
-          de <em>gestão."</em>
-        </h2>
-        <p class="desc filosofia-desc">
-          A E4D mapeia o que sangra dinheiro, estrutura o que estava quebrado e acompanha
-          a implementação. Não entregamos relatórios e desaparecemos.
-        </p>
-        <div class="filosofia-principios">
-          <div class="principio">
-            <span class="principio-num">01</span>
-            <div>
-              <div class="principio-title">Diagnóstico antes da solução</div>
-              <div class="principio-desc">Antes de propor, a gente escuta e mensura.</div>
+      <div class="ferramentas-grid-novo">
+        <div class="ferramenta-card">
+          <div class="ferramenta-icon"><i data-lucide="monitor"></i></div>
+          <div class="ferramenta-content">
+            <h3>Gestão de Eficiência</h3>
+            <p>Levantamento detalhado de gargalos operacionais, com análise de processos e identificação de onde o resultado está sendo perdido.</p>
+            <div class="ferramenta-stats">
+              <div class="f-stat">
+                <span class="f-num">Presença</span>
+                <span class="f-label">em campo durante toda a implantação</span>
+              </div>
+              <div class="f-stat">
+                <span class="f-num">Entrega</span>
+                <span class="f-label">com plano, prazo e responsável definidos</span>
+              </div>
             </div>
           </div>
-          <div class="principio">
-            <span class="principio-num">02</span>
-            <div>
-              <div class="principio-title">Acompanhamento real</div>
-              <div class="principio-desc">Estamos em campo na implementação, não só no PDF.</div>
-            </div>
-          </div>
-          <div class="principio">
-            <span class="principio-num">03</span>
-            <div>
-              <div class="principio-title">Linguagem de resultado</div>
-              <div class="principio-desc">Indicadores, payback, previsibilidade — nunca achismo.</div>
+        </div>
+
+        <div class="ferramenta-card">
+          <div class="ferramenta-icon"><i data-lucide="bar-chart-3"></i></div>
+          <div class="ferramenta-content">
+            <h3>KPIs e Indicadores</h3>
+            <p>Definição e acompanhamento de indicadores alinhados à realidade da operação. Dados que chegam ao gestor no formato certo para decidir.</p>
+            <div class="ferramenta-stats">
+              <div class="f-stat">
+                <span class="f-num">Semanal</span>
+                <span class="f-label">rotina de acompanhamento</span>
+              </div>
+              <div class="f-stat">
+                <span class="f-num">Dados</span>
+                <span class="f-label">para decisões executivas</span>
+              </div>
             </div>
           </div>
         </div>
@@ -571,54 +1858,145 @@
     </div>
   </section>
 
-  <!-- ══════════════════════ MENTORIA EAV ══════════════════════ -->
-  <section class="mentoria" id="mentoria">
+  <!-- ══════════════════════ DASHBOARD ══════════════════════ -->
+  <section class="db-section" id="dashboard">
     <div class="container">
-      <div class="mentoria-inner">
-        <div class="mentoria-header">
-          <div class="label label-light"><span class="line line-light"></span> Mentoria Empresa de Alto Valor</div>
-          <h2 class="title-h2 title-light reveal-title">
-            12 semanas para<br>
-            transformar<br>
-            lideranças em <em>força</em><br>
-            <em>operacional.</em>
-          </h2>
-          <p class="desc desc-light mentoria-intro">
-            Uma trilha estruturada de desenvolvimento de lideranças, com foco em gestão,
-            comunicação e métricas. Aplicada dentro do contexto real da operação hospitalar.
-          </p>
+      <header class="section-header section-header-center">
+        <div class="label label-light"><span class="line line-light"></span> Inteligência operacional</div>
+        <h2 class="title-h2 title-light reveal-title">Como transformamos dados <em>em decisões.</em></h2>
+        <p class="desc-center desc-light">Visão consolidada da operação. Gargalos visíveis. Decisões embasadas em números reais.</p>
+      </header>
 
-          <a href="#contato" class="btn btn-gold magnetic" data-hover>
-            <span>Quero conhecer a mentoria <i data-lucide="arrow-up-right"></i></span>
+      <div class="db-img-wrap">
+        <img src="imagens/img-dashboard-optimized.jpg?v=20260507" alt="Painel operacional E4D" class="db-img" width="1366" height="737" loading="lazy" decoding="async">
+      </div>
+
+      <p class="db-caption">Cada cliente recebe visibilidade total sobre o progresso da consultoria, fase por fase.</p>
+    </div>
+  </section>
+
+  <!-- ══════════════════════ MENTORIA V2 ══════════════════════ -->
+  <section class="mentoria-v2" id="mentoria">
+    <div class="container">
+      <header class="section-header section-header-center">
+        <div class="label label-light"><span class="line line-light"></span> Mentoria E.A.V.</div>
+        <h2 class="title-h2 title-light">Liderança desenvolvida. <em>Gestão consolidada.</em></h2>
+      </header>
+
+      <div class="mentoria-v2-split">
+
+        <div class="mentoria-v2-left">
+
+          <div class="mentoria-v2-promise">
+            <div class="promise-icon">
+              <i data-lucide="shield-check"></i>
+            </div>
+            <div class="promise-text">
+              <p class="promise-headline">Presença em cada etapa</p>
+              <p class="promise-sub">Acompanhamento próximo do diagnóstico à consolidação da mudança.
+              </p>
+            </div>
+          </div>
+
+          <div class="mentoria-v2-stats">
+            <div class="stat-box">
+              <div class="stat-value">Múltiplos</div>
+              <div class="stat-label">Temas de liderança e gestão</div>
+            </div>
+            <div class="stat-box">
+              <div class="stat-value">1<span> plano</span></div>
+              <div class="stat-label">Personalizado por gestor</div>
+            </div>
+            <div class="stat-box">
+              <div class="stat-value">Contínuo</div>
+              <div class="stat-label">Acompanhamento ao longo do processo</div>
+            </div>
+          </div>
+
+          <div class="mentoria-v2-who">
+            <h4>Para quem é?</h4>
+            <p>Diretores, gerentes e supervisores que precisam <strong>sair do modo reativo</strong> e liderar equipes com mais clareza, consistência e resultado.</p>
+          </div>
+
+          <a href="#contato" class="btn btn-gold magnetic" data-hover data-lead-modal>
+            <span>Agendar mentoria <i data-lucide="arrow-right"></i></span>
           </a>
+
+          <div class="mentoria-v2-urgency">
+            <div class="urgency-dot"></div>
+            <p><strong>Próximo passo:</strong> diagnóstico de liderança e plano de desenvolvimento</p>
+          </div>
         </div>
 
-        <ul class="mentoria-grid">
-          <li class="mentoria-item">
-            <span class="mentoria-num">01</span>
-            <span class="mentoria-name">Liderança</span>
-          </li>
-          <li class="mentoria-item">
-            <span class="mentoria-num">02</span>
-            <span class="mentoria-name">Gestão</span>
-          </li>
-          <li class="mentoria-item">
-            <span class="mentoria-num">03</span>
-            <span class="mentoria-name">Comunicação</span>
-          </li>
-          <li class="mentoria-item">
-            <span class="mentoria-num">04</span>
-            <span class="mentoria-name">Análise comportamental</span>
-          </li>
-          <li class="mentoria-item">
-            <span class="mentoria-num">05</span>
-            <span class="mentoria-name">Métricas de desempenho</span>
-          </li>
-          <li class="mentoria-item">
-            <span class="mentoria-num">06</span>
-            <span class="mentoria-name">Alta performance</span>
-          </li>
-        </ul>
+        <div class="mentoria-v2-right">
+          <div class="mentoria-v2-card">
+            <div class="card-header">
+              <h4>O que você recebe</h4>
+              <p>Um plano de desenvolvimento com temas claros, aplicação prática e evolução mensurável.</p>
+            </div>
+
+            <div class="phase-grid">
+              <div class="card-phase">
+                <div class="phase-marker">
+                  <span class="phase-num">1</span>
+                  <span class="phase-weeks">Diagnóstico</span>
+                </div>
+                <div class="phase-content">
+                  <h5>Diagnóstico Profundo</h5>
+                  <ul>
+                    <li>Avaliação comportamental completa</li>
+                    <li>Entrevista estruturada com gestor</li>
+                    <li>Definição de objetivos e KPIs</li>
+                    <li>Plano personalizado de desenvolvimento</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="card-phase card-phase-featured">
+                <div class="phase-marker">
+                  <span class="phase-num">2</span>
+                  <span class="phase-weeks">Desenvolvimento</span>
+                </div>
+                <div class="phase-content">
+                  <h5>Desenvolvimento Ativo</h5>
+                  <ul>
+                    <li>Mentorias estruturadas de liderança</li>
+                    <li>Ferramentas práticas de gestão</li>
+                    <li>Acompanhamento semanal de evolução</li>
+                    <li>Modelos práticos de decisão e gestão</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="card-phase">
+                <div class="phase-marker">
+                  <span class="phase-num">3</span>
+                  <span class="phase-weeks">Consolidação</span>
+                </div>
+                <div class="phase-content">
+                  <h5>Consolidação & Autonomia</h5>
+                  <ul>
+                    <li>Consolidação de hábitos de gestão</li>
+                    <li>Documento de continuidade</li>
+                    <li>Revisão final de resultados</li>
+                    <li>Plano de continuidade da gestão</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="mentoria-v2-proof">
+            <div class="proof-quote">
+              "Liderança, gestão, comunicação e métricas de desempenho em um acompanhamento prático e contínuo."
+            </div>
+            <div class="proof-author">
+              <strong>Mentoria Empresa de Alto Valor</strong>
+              <span>Programa estruturado para gestores e lideranças</span>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
@@ -628,58 +2006,88 @@
     <div class="container">
       <header class="section-header">
         <div class="label"><span class="line"></span> 05 — O que esperar</div>
-        <h2 class="title-h2 reveal-title">
-          Resultados<br>
-          <em>previstos no escopo.</em>
-        </h2>
+        <h2 class="title-h2">O que uma operação <em>reestruturada gera.</em></h2>
       </header>
 
       <div class="resultados-grid">
-        <div class="resultado-image">
-          <img src="https://images.unsplash.com/photo-1551288560-199a91ba4188?q=80&w=2070&auto=format&fit=crop" alt="Métricas de sucesso" class="res-img">
+        <div class="resultado-card-novo">
+          <i data-lucide="trending-up"></i>
+          <h3>Faturamento em expansão</h3>
+          <p>Captação estruturada e fidelização do corpo clínico.</p>
         </div>
-        <div class="resultado-card">
-          <div class="resultado-icon"><i data-lucide="trending-up"></i></div>
-          <div class="resultado-title">Faturamento em expansão</div>
-          <p class="resultado-desc">Aumento exponencial do faturamento com captação estruturada e fidelização do corpo
-            clínico.</p>
+        <div class="resultado-card-novo">
+          <i data-lucide="trending-down"></i>
+          <h3>Custos sob controle</h3>
+          <p>Renegociação estratégica e revisão linha a linha.</p>
         </div>
-        <div class="resultado-card">
-          <div class="resultado-icon"><i data-lucide="trending-down"></i></div>
-          <div class="resultado-title">Custos sob controle</div>
-          <p class="resultado-desc">Redução de custos operacionais com renegociação de contratos e revisão de cada linha
-            de despesa.</p>
+        <div class="resultado-card-novo">
+          <i data-lucide="users"></i>
+          <h3>Times alinhados</h3>
+          <p>Equipes motivadas, produtivas e conectadas aos indicadores.</p>
         </div>
-        <div class="resultado-card">
-          <div class="resultado-icon"><i data-lucide="users-2"></i></div>
-          <div class="resultado-title">Times alinhados</div>
-          <p class="resultado-desc">Equipes mais motivadas, produtivas e conectadas ao indicador certo — não ao esforço
-            aleatório.</p>
+        <div class="resultado-card-novo">
+          <i data-lucide="layout-grid"></i>
+          <h3>Gestão profissionalizada</h3>
+          <p>Processos escaláveis e decisão baseada em dados.</p>
         </div>
-        <div class="resultado-card">
-          <div class="resultado-icon"><i data-lucide="layout-grid"></i></div>
-          <div class="resultado-title">Gestão profissionalizada</div>
-          <p class="resultado-desc">Estrutura de gestão sustentável, com processos escaláveis e tomada de decisão
-            baseada em dados.</p>
+        <div class="resultado-card-novo">
+          <i data-lucide="shield-check"></i>
+          <h3>Infraestrutura pronta</h3>
+          <p>Ambiente seguro e preparado para acreditações.</p>
         </div>
-        <div class="resultado-card">
-          <div class="resultado-icon"><i data-lucide="shield-check"></i></div>
-          <div class="resultado-title">Infraestrutura pronta</div>
-          <p class="resultado-desc">Ambiente seguro, em conformidade regulatória e preparado para acreditações JCI, ONA
-            e QMENTUM.</p>
-        </div>
-        <div class="resultado-card">
-          <div class="resultado-icon"><i data-lucide="heart-pulse"></i></div>
-          <div class="resultado-title">Experiência do paciente</div>
-          <p class="resultado-desc">Jornada do paciente aprimorada e diferenciação competitiva de verdade no mercado
-            local.</p>
+        <div class="resultado-card-novo">
+          <i data-lucide="heart-pulse"></i>
+          <h3>Experiência do paciente</h3>
+          <p>Jornada aprimorada e diferenciação competitiva real.</p>
         </div>
       </div>
 
-      <blockquote class="resultados-quote">
-        <p>"Não vendemos relatório. Vendemos o que muda <em>depois</em> que o relatório é entregue."</p>
-        <cite>— Credibilidade técnica · E4D Consultoria</cite>
+      <blockquote class="resultados-quote-novo">
+        <p>"Não entregamos documento. Entregamos uma operação capaz de sustentar resultado com mais autonomia."</p>
+        <cite>E4D Consultoria</cite>
       </blockquote>
+
+      <div class="resultados-cta">
+        <a href="#contato" class="btn btn-gold magnetic" data-hover data-lead-modal>
+          <span>Agendar diagnóstico operacional <i data-lucide="arrow-up-right"></i></span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════ FUNDADOR ══════════════════════ -->
+  <section class="fundador-section" id="fundador">
+    <div class="container">
+      <header class="fundador-header">
+        <h2 class="title-h2">Sobre o <em>fundador.</em></h2>
+      </header>
+
+      <div class="fundador-inner">
+        <div class="fundador-photo-wrap">
+          <div class="fundador-photo-placeholder">
+            <img src="imagens/mateus-optimized.jpg?v=20260507" alt="Mateus Pimentel, fundador da E4D Consultoria" width="1050" height="1575" loading="lazy" decoding="async">
+          </div>
+          </div>
+
+        <div class="fundador-content">
+          <p class="fundador-name-label">Mateus Pimentel</p>
+          <p class="fundador-desc">Engenheiro por formação, gestor por experiência prática e mentor por propósito. Minha trajetória na saúde foi construída dentro da operação, participando da construção, implementação e abertura do Hospital Pediátrico Pró Criança Jutta Batista, onde aos 24 anos assumi a Gerência de Operações Hospitalares.</p>
+          <p class="fundador-desc">Em 2019, com a incorporação do hospital pela Rede D’Or, segui atuando na gestão operacional até integrar o time Corporativo de Engenharia de Manutenção da maior rede hospitalar da América Latina, participando de projetos estratégicos, auditorias, padronizações, gestão de contratos e desenvolvimento operacional em dezenas de unidades hospitalares.</p>
+          <p class="fundador-desc">Hoje atuo como consultor de gestão empresarial para clínicas e hospitais, ajudando empresas da saúde a estruturarem processos, desenvolverem lideranças, aumentarem produtividade, reduzirem desperdícios e melhorarem a experiência do paciente através de uma gestão baseada em dados, pessoas e resultados.</p>
+          <p class="fundador-desc">Também atuo como mentor, palestrante e facilitador de treinamentos corporativos, com uma missão clara: provar que liderança se aprende e que bons técnicos podem e devem se tornar grandes líderes.</p>
+
+          <ul class="fundador-list">
+            <li><i data-lucide="check-circle"></i> Gestão operacional hospitalar</li>
+            <li><i data-lucide="check-circle"></i> Desenvolvimento de lideranças</li>
+            <li><i data-lucide="check-circle"></i> Engenharia e conformidade regulatória</li>
+            <li><i data-lucide="check-circle"></i> Experiência do paciente</li>
+          </ul>
+
+          <a href="#contato" class="btn btn-gold magnetic" data-hover data-lead-modal>
+            <span>Falar com Mateus <i data-lucide="arrow-up-right"></i></span>
+          </a>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -701,28 +2109,89 @@
         concreto de atuação.
       </p>
 
-      <div class="contato-actions">
-        <a href="https://wa.me/5521999999999" target="_blank" rel="noopener" class="btn btn-gold magnetic" data-hover>
-          <span>Agendar Diagnóstico Gratuito <i data-lucide="arrow-up-right"></i></span>
-        </a>
-        <a href="mailto:contato@e4dconsultoria.com.br" class="btn btn-ghost-light magnetic" data-hover>
-          <span>Enviar e-mail <i data-lucide="mail"></i></span>
-        </a>
-      </div>
-
       <div class="contato-meta">
         <div class="contato-meta-item">
-          <div class="contato-meta-label">Atuação</div>
-          <div class="contato-meta-value">Rio de Janeiro · Macaé</div>
+          <span class="contato-meta-icon"><i data-lucide="map-pin"></i></span>
+          <div>
+            <div class="contato-meta-label">Onde atendemos</div>
+            <div class="contato-meta-value">Atendimento consultivo sob demanda</div>
+          </div>
         </div>
+        <a href="https://wa.me/5521996006835" target="_blank" rel="noopener noreferrer" class="contato-meta-item contato-meta-link" data-lead-modal="whatsapp">
+          <span class="contato-meta-icon"><i data-lucide="message-circle"></i></span>
+          <div>
+            <div class="contato-meta-label">WhatsApp</div>
+            <div class="contato-meta-value contato-email-value">Fale pelo WhatsApp</div>
+          </div>
+        </a>
         <div class="contato-meta-item">
-          <div class="contato-meta-label">Segmento</div>
-          <div class="contato-meta-value">Clínicas e hospitais</div>
+          <span class="contato-meta-icon"><i data-lucide="building-2"></i></span>
+          <div>
+            <div class="contato-meta-label">Segmento</div>
+            <div class="contato-meta-value">Clínicas, hospitais e empresas</div>
+          </div>
         </div>
-        <div class="contato-meta-item">
-          <div class="contato-meta-label">Representante</div>
-          <div class="contato-meta-value">Mateus Pimentel</div>
-        </div>
+      </div>
+
+      <div class="contato-form-card">
+        <h3>Envie uma mensagem:</h3>
+        <form class="contato-form" id="contato-form" action="send-email.php" method="post" novalidate>
+
+          <div class="form-field form-field-full">
+            <label for="contato-nome">Nome completo <span>*</span></label>
+            <input id="contato-nome" name="nome" type="text" autocomplete="name" required>
+          </div>
+
+          <div class="contato-form-grid">
+            <div class="form-field">
+              <label for="contato-telefone">Telefone <span>*</span></label>
+              <input id="contato-telefone" name="telefone" type="tel" autocomplete="tel" required>
+            </div>
+            <div class="form-field">
+              <label for="contato-email">E-mail <span>*</span></label>
+              <input id="contato-email" name="email" type="email" autocomplete="email" required>
+            </div>
+            <div class="form-field">
+              <label for="contato-cargo">Cargo na empresa <span>*</span></label>
+              <input id="contato-cargo" name="cargo" type="text" required>
+            </div>
+            <div class="form-field">
+              <label for="contato-site">Website da empresa</label>
+              <input id="contato-site" name="website" type="text" autocomplete="url">
+            </div>
+          </div>
+
+          <div class="form-field form-field-full">
+            <label for="contato-segmento">Segmento de atuação <span>*</span></label>
+            <input id="contato-segmento" name="segmento" type="text" required>
+          </div>
+
+          <fieldset class="contato-form-services">
+            <legend>Serviço</legend>
+            <label><input type="checkbox" name="servico" value="Diagnóstico operacional"> Diagnóstico operacional</label>
+            <label><input type="checkbox" name="servico" value="Gestão administrativa e estratégica"> Gestão administrativa e estratégica</label>
+            <label><input type="checkbox" name="servico" value="Engenharia e infraestrutura"> Engenharia e infraestrutura</label>
+            <label><input type="checkbox" name="servico" value="Experiência do paciente"> Experiência do paciente</label>
+            <label><input type="checkbox" name="servico" value="Desenvolvimento de lideranças"> Desenvolvimento de lideranças</label>
+            <label><input type="checkbox" name="servico" value="Indicadores e dashboards"> Indicadores e dashboards</label>
+            <label><input type="checkbox" name="servico" value="Mentoria EAV"> Mentoria E.A.V.</label>
+            <label><input type="checkbox" name="servico" value="Outro"> Outro</label>
+          </fieldset>
+
+          <div class="form-field form-field-full">
+            <label for="contato-mensagem">Mensagem</label>
+            <textarea id="contato-mensagem" name="mensagem" rows="6"></textarea>
+          </div>
+
+          <label class="contato-consent">
+            <input type="checkbox" name="autorizacao" value="Autorizo contato" required>
+            <span>Autorizo a E4D Consultoria a usar meus dados para retornar este contato.</span>
+          </label>
+
+          <button type="submit" class="btn btn-gold contato-submit">
+            <span>Enviar mensagem <i data-lucide="arrow-up-right"></i></span>
+          </button>
+        </form>
       </div>
     </div>
   </section>
@@ -732,9 +2201,7 @@
     <div class="container">
       <div class="footer-top">
         <a href="#top" class="footer-brand">
-          <div class="nav-logo-icon">
-            <span></span><span></span><span></span><span></span>
-          </div>
+          <img src="imagens/logo-optimized.png?v=20260507" alt="E4D" class="nav-logo-img" width="164" height="123" loading="lazy" decoding="async">
           <div class="footer-brand-text">
             E4D Consultoria
             <span>A estrutura que faltava na sua operação.</span>
@@ -748,22 +2215,68 @@
           <a href="#mentoria" data-hover>Mentoria</a>
           <a href="#resultados" data-hover>Resultados</a>
           <a href="#contato" data-hover>Contato</a>
+          <a href="https://www.instagram.com/e4d.consultoria/" target="_blank" rel="noopener" data-hover>Instagram</a>
         </nav>
       </div>
 
       <div class="footer-bottom">
         <div class="footer-copy">© 2026 E4D Consultoria. Todos os direitos reservados.</div>
-        <div class="footer-copy">Consultoria Hospitalar · RJ + Macaé</div>
+        <div class="footer-copy">Consultoria Hospitalar · Atendimento consultivo</div>
       </div>
     </div>
   </footer>
 
+  <!-- ══════════════════════ WHATSAPP FLOAT ══════════════════════ -->
+  <a id="waFloat" href="https://wa.me/5521996006835" target="_blank" rel="noopener" class="wa-float" aria-label="Fale pelo WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor" width="28" height="28"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
+
+  <!-- ══════════════════════ LEAD MODAL ══════════════════════ -->
+  <div class="wa-modal-overlay" id="waModal" role="dialog" aria-modal="true" aria-labelledby="waModalTitle">
+    <div class="wa-modal">
+      <button class="wa-modal-close" id="waModalClose" aria-label="Fechar">
+        <i data-lucide="x"></i>
+      </button>
+      <div class="wa-modal-header">
+        <div class="wa-modal-icon" id="waModalIcon">
+          <i data-lucide="mail" style="width:28px;height:28px;"></i>
+        </div>
+        <div>
+          <h3 id="waModalTitle">Fale com a E4D</h3>
+          <p id="waModalDescription">Preencha os dados para enviar sua mensagem</p>
+        </div>
+      </div>
+      <form class="wa-modal-form" id="waModalForm" action="send-email.php" method="post" novalidate>
+        <div class="wa-form-field">
+          <label for="wa-nome">Nome completo <span>*</span></label>
+          <input id="wa-nome" name="nome" type="text" placeholder="Seu nome" required autocomplete="name">
+        </div>
+        <div class="wa-form-field">
+          <label for="wa-email">E-mail corporativo <span>*</span></label>
+          <input id="wa-email" name="email" type="email" placeholder="nome@empresa.com.br" required autocomplete="email">
+        </div>
+        <div class="wa-form-field">
+          <label for="wa-telefone">Telefone <span>*</span></label>
+          <input id="wa-telefone" name="telefone" type="tel" placeholder="(21) 99999-9999" required autocomplete="tel">
+        </div>
+        <div class="wa-form-field">
+          <label for="wa-empresa">Empresa <span>*</span></label>
+          <input id="wa-empresa" name="empresa" type="text" placeholder="Nome da empresa" required autocomplete="organization">
+        </div>
+        <div class="wa-form-field">
+          <label for="wa-mensagem">Mensagem</label>
+          <textarea id="wa-mensagem" name="mensagem" placeholder="Como podemos ajudar?" rows="3"></textarea>
+        </div>
+        <button type="submit" class="btn btn-gold wa-modal-submit">
+          <span id="waModalSubmitContent">Enviar mensagem <i data-lucide="arrow-up-right"></i></span>
+        </button>
+      </form>
+    </div>
+  </div>
+
   <!-- Scripts -->
-  <script src="https://unpkg.com/@studio-freight/lenis@1.0.34/dist/lenis.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-  <script src="https://unpkg.com/split-type"></script>
-  <script src="app.js"></script>
+  <script type="text/javascript" src="https://onsite.optimonk.com/script.js?account=270389" async></script>
+  <script src="app.js?v=20260604-optimonk" defer></script>
 </body>
 
 </html>

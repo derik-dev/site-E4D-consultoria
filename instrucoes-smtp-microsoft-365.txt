@@ -1,0 +1,41 @@
+INSTRUCOES PARA SMTP NO MICROSOFT 365
+
+Neste projeto, o envio de e-mail via PHP deve usar os dados SMTP da conta de e-mail hospedada no Microsoft 365.
+
+Configuracao SMTP normalmente usada no Microsoft 365:
+
+SMTP_HOST: smtp.office365.com
+SMTP_PORT: 587
+SMTP_SECURE: tls
+SMTP_USER: email@dominio.com.br
+SMTP_PASS: senha_da_conta_ou_senha_de_aplicativo
+
+Onde pegar a senha:
+
+1. Se o cliente sabe a senha da conta de e-mail, normalmente e essa mesma senha.
+2. Se a conta usa MFA/autenticacao em duas etapas, a senha normal pode falhar. Nesse caso pode ser necessario gerar uma senha de aplicativo ou configurar outro metodo de autenticacao.
+3. Se ninguem sabe a senha atual, o administrador do Microsoft 365 precisa redefinir a senha da conta no Microsoft 365 Admin Center.
+
+Caminho tipico para redefinir a senha:
+
+1. Entrar em https://admin.microsoft.com
+2. Ir em Users / Usuarios
+3. Abrir Active users / Usuarios ativos
+4. Selecionar a conta de e-mail que vai enviar as mensagens
+5. Usar Reset password / Redefinir senha
+
+Ponto importante:
+
+O Microsoft 365 tambem precisa permitir SMTP AUTH para essa caixa de e-mail. SMTP AUTH e o recurso usado por sites, sistemas, aplicativos e dispositivos para enviar e-mail via smtp.office365.com, normalmente usando a porta 587 com STARTTLS.
+
+Configuracao que deve substituir a atual do send-email.php se o e-mail estiver no Microsoft 365:
+
+define('SMTP_HOST', 'smtp.office365.com');
+define('SMTP_PORT', 587);
+define('SMTP_SECURE', 'tls');
+define('SMTP_USER', 'email@dominio.com.br');
+define('SMTP_PASS', 'senha_da_conta_ou_senha_de_aplicativo');
+
+Observacao:
+
+Nao e recomendado deixar a senha real salva em arquivos versionados no GitHub. O ideal e usar variavel de ambiente ou um arquivo de configuracao fora do versionamento.

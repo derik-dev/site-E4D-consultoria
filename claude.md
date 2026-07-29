@@ -1,0 +1,6 @@
+- Sempre responda apenas com código completo
+- Não escreva explicações
+- Design deve ser moderno, nível Apple
+- Use animações suaves
+- Evite componentes genéricos
+- Código pronto para produção
